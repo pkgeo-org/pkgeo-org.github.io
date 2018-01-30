@@ -5,8 +5,8 @@
     <description>Free and Open Source Bassed Geospatial Training</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Jan 2018 18:13:57 -0800</pubDate>
-    <lastBuildDate>Mon, 29 Jan 2018 18:13:57 -0800</lastBuildDate>
+    <pubDate>Mon, 29 Jan 2018 18:34:40 -0800</pubDate>
+    <lastBuildDate>Mon, 29 Jan 2018 18:34:40 -0800</lastBuildDate>
     <generator>Jekyll v3.7.2</generator>
     
       <item>
@@ -77,8 +77,8 @@
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -ti --rm -v $(pwd):/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON PS_test.geojson PugetSound.shp -Progress&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 27 Jan 2018 11:48:00 -0800</pubDate>
-        <link>http://localhost:4000/articles/18/Vector-Tile</link>
-        <guid isPermaLink="true">http://localhost:4000/articles/18/Vector-Tile</guid>
+        <link>http://localhost:4000/articles/18/Vector-Tile.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/18/Vector-Tile.html</guid>
         
         
         <category>training</category>
@@ -498,8 +498,8 @@ etc..
 
 </description>
         <pubDate>Thu, 19 Feb 2015 13:46:04 -0800</pubDate>
-        <link>http://localhost:4000/articles/15/tufte-style-jekyll-blog</link>
-        <guid isPermaLink="true">http://localhost:4000/articles/15/tufte-style-jekyll-blog</guid>
+        <link>http://localhost:4000/articles/15/tufte-style-jekyll-blog.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/tufte-style-jekyll-blog.html</guid>
         
         
         <category>jekyll</category>
@@ -686,8 +686,8 @@ D = \left(\begin{matrix}
 &lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/assets/img/rhino.png&quot; /&gt;&lt;figcaption&gt;Tufte's pet rhino (via &lt;a href=&quot;//www.edwardtufte.com/tufte/&quot;&gt;Edward Tufte&lt;/a&gt;)&lt;/figcaption&gt;&lt;/figure&gt;
 </description>
         <pubDate>Tue, 17 Feb 2015 03:04:01 -0800</pubDate>
-        <link>http://localhost:4000/articles/15/Edge-Cases</link>
-        <guid isPermaLink="true">http://localhost:4000/articles/15/Edge-Cases</guid>
+        <link>http://localhost:4000/articles/15/Edge-Cases.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/Edge-Cases.html</guid>
         
         
         <category>post</category>
@@ -712,8 +712,8 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 </description>
         <pubDate>Sun, 08 Feb 2015 05:06:04 -0800</pubDate>
-        <link>http://localhost:4000/articles/15/welcome-to-jekyll</link>
-        <guid isPermaLink="true">http://localhost:4000/articles/15/welcome-to-jekyll</guid>
+        <link>http://localhost:4000/articles/15/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/15/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
