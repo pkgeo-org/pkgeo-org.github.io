@@ -5,9 +5,43 @@
     <description>Free and Open Source Bassed Geospatial Training</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Jan 2018 18:34:40 -0800</pubDate>
-    <lastBuildDate>Mon, 29 Jan 2018 18:34:40 -0800</lastBuildDate>
+    <pubDate>Thu, 01 Feb 2018 12:50:59 -0800</pubDate>
+    <lastBuildDate>Thu, 01 Feb 2018 12:50:59 -0800</lastBuildDate>
     <generator>Jekyll v3.7.2</generator>
+    
+      <item>
+        <title>List Test</title>
+        <description>&lt;p&gt;&lt;label for=&quot;mn-id-lists-are-bad&quot; class=&quot;margin-toggle&quot;&gt; ⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mn-id-lists-are-bad&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;Tufte CSS encourages caution before reaching for a list element, and by default removes the bullet points from unordered lists. &lt;/span&gt;
+In this lesson we will see what Paul has decided to use for ordered and unordered list styles instead of that the Tufte-style uses.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;an-unordered-list&quot;&gt;An Unordered List&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mount Docker.dmg&lt;/li&gt;
+  &lt;li&gt;Drag Docker App onto Applications Shortcut&lt;/li&gt;
+  &lt;li&gt;Launch Docker&lt;/li&gt;
+  &lt;li&gt;Agree to run application from Internet&lt;/li&gt;
+  &lt;li&gt;Supply admin password&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;an-ordered-list&quot;&gt;An Ordered List&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;usStates.geojson&lt;/li&gt;
+  &lt;li&gt;Move to $HOME/tippecanoe&lt;/li&gt;
+  &lt;li&gt;Trois&lt;/li&gt;
+  &lt;li&gt;Quattro&lt;/li&gt;
+  &lt;li&gt;Cinqo&lt;/li&gt;
+  &lt;li&gt;VI&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 31 Jan 2018 17:19:00 -0800</pubDate>
+        <link>http://localhost:4000/articles/18/tester.html</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/18/tester.html</guid>
+        
+        
+        <category>training</category>
+        
+      </item>
     
       <item>
         <title>Vector Tiles the Docker Way</title>
