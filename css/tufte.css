@@ -369,34 +369,10 @@ section {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
-ol {
+ul, ol {
   width: 45%;
   -webkit-padding-start: 5%;
-  -webkit-padding-end: 5%;
-  list-style-type: lower-roman; }
-
-ul {
-  width: 45%;
-  -webkit-padding-start: 5%;
-  -webkit-padding-end: 5%;
-  list-style-type: square; }
-
-ul {
-  list-style: none;
-  /* Remove list bullets */
-  padding: 0;
-  margin: 0; }
-
-ul li {
-  padding-left: 16px; }
-
-ul li:before {
-  content: "🌐";
-  /* Insert content that looks like bullets */
-  font-size: 60%;
-  padding-right: 8px;
-  color: red;
-  /* Or a color you prefer */ }
+  -webkit-padding-end: 5%; }
 
 ul.content-listing li {
   padding-left: 0px; }

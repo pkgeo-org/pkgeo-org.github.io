@@ -5,8 +5,8 @@
     <description>Free and Open Source Bassed Geospatial Training</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Feb 2018 12:50:59 -0800</pubDate>
-    <lastBuildDate>Thu, 01 Feb 2018 12:50:59 -0800</lastBuildDate>
+    <pubDate>Thu, 29 Mar 2018 20:20:39 -0700</pubDate>
+    <lastBuildDate>Thu, 29 Mar 2018 20:20:39 -0700</lastBuildDate>
     <generator>Jekyll v3.7.2</generator>
     
       <item>
@@ -58,23 +58,60 @@ In this lesson we will see what Paul has decided to use for ordered and unordere
   &lt;li&gt;Supply admin password&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&quot;install-docker-on-windows&quot;&gt;Install Docker on Windows&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Requires Windows 10 Pro  or Enterprise&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Ensure that hardware virtualization support is turned on in the BIOS settings&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Does Not Work with Windows 10 Home&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Approaches to work arround this:
+        &lt;ul&gt;
+          &lt;li&gt;Can be installed on &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10&quot;&gt;Windows Subsystem for Linux&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;Can be installed on a virtual machine running linux&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/toolbox/toolbox_install_windows/&quot;&gt;Docker Toolbox&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Accept Defaults during install&lt;/li&gt;
+              &lt;li&gt;Run the Quick Start Terminal&lt;/li&gt;
+              &lt;li&gt;Execute the steps at the Quick Start Terminal&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&quot;install-a-tippecanoe-container&quot;&gt;Install a Tippecanoe container&lt;/h2&gt;
-&lt;p&gt;Search for Tippecanoe on &lt;a href=&quot;https://hub.docker.com/&quot;&gt;Docker Hub&lt;/a&gt;. Select the &lt;a href=&quot;https://hub.docker.com/r/jskeates/tippecanoe/&quot;&gt;jskeates/tippecanoe repository&lt;/a&gt;. Copy the appropriate command &lt;label for=&quot;cmd-pull-tippe&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cmd-pull-tippe&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker pull jskeates/tippecanoe&lt;/code&gt; &lt;/span&gt; from the &lt;em&gt;Docker Pull Command&lt;/em&gt; section of the page, then paste it at the terminal prompt and hit enter to run it.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Search for Tippecanoe on &lt;a href=&quot;https://hub.docker.com/&quot;&gt;Docker Hub&lt;/a&gt;. Select the &lt;a href=&quot;https://hub.docker.com/r/jskeates/tippecanoe/&quot;&gt;jskeates/tippecanoe repository&lt;/a&gt;. Copy the appropriate command from the &lt;em&gt;Docker Pull Command&lt;/em&gt; section of the page, then paste it at the terminal prompt and hit enter to run it.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker pull jskeates/tippecanoe&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;locate-a-geojson-file&quot;&gt;Locate a geojson file&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;usStates.geojson&lt;/li&gt;
+  &lt;li&gt;Created C:\Users\randre\tippecanoe&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/pkgeo-org/pkgeo-org.github.io/tree/master/tippecanoe&quot;&gt;usStates.geojson&lt;/a&gt; - figure out how to download the file&lt;/li&gt;
   &lt;li&gt;Move to $HOME/tippecanoe&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;create-some-vector-tiles&quot;&gt;Create some vector tiles&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;Be sure Docker is running on your computer&lt;/li&gt;
-  &lt;li&gt;Start Tippecanoe container in interactive mode
-&lt;label for=&quot;cmd-docker-tippe&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cmd-docker-tippe&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest&lt;/code&gt; &lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;Issue tippecanoe command
-&lt;label for=&quot;cmd-tippecanoe&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cmd-tippecanoe&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tippecanoe -o states.mbtiles usStates.geojson&lt;/code&gt; &lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;Exit the container when it is done. The vector tiles will be in a new folder: $HOME/tippecanoe/states.mbtiles.&lt;/li&gt;
+  &lt;li&gt;Mac: Be sure Docker is running on your computer&lt;/li&gt;
+  &lt;li&gt;Windows: Be in Docker Quick Start Terminal&lt;/li&gt;
+  &lt;li&gt;Start Tippecanoe container in interactive mode: &lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Issue tippecanoe command: &lt;code class=&quot;highlighter-rouge&quot;&gt;tippecanoe -o states.mbtiles usStates.geojson&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Exit the container when it is done. The vector tiles will be in a new folder: $HOME/tippecanoe/states.mbtiles.
+    &lt;ul&gt;
+      &lt;li&gt;$HOME is replaced with your user directory at a unix style command promt. This works for MacOS, Docker Toolbox, or Linux, but probably not for Windows&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;install-a-tileserver-gl-container&quot;&gt;Install a TileServer GL Container&lt;/h2&gt;
@@ -82,17 +119,20 @@ In this lesson we will see what Paul has decided to use for ordered and unordere
   &lt;li&gt;Go to &lt;a href=&quot;https://hub.docker.com/&quot;&gt;Docker Hub&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Search for tileserver-gl&lt;/li&gt;
   &lt;li&gt;Select &lt;a href=&quot;https://hub.docker.com/r/klokantech/tileserver-gl/&quot;&gt;klokantech/tileserver-gl&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Copy the Docker Pull Command &amp;amp; run it at command line
-&lt;label for=&quot;cmd-pull-tsgl&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cmd-pull-tsgl&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker pull klokantech/tileserver-gl&lt;/code&gt; &lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;Copy the Docker Pull Command &amp;amp; run it at command line &lt;code class=&quot;highlighter-rouge&quot;&gt;docker pull klokantech/tileserver-gl&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;run-tileserver-gl&quot;&gt;Run TileServer GL&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Be sure Docker is running on your computer&lt;/li&gt;
-  &lt;li&gt;From the command line change into the tippecanoe directory
-&lt;label for=&quot;cmd-cd&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cmd-cd&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd $HOME/tippecanoe&lt;/code&gt; &lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;Start the TileServer GL container from the command line
-&lt;label for=&quot;cmd-docker-tsgl&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cmd-docker-tsgl&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/tileserver-gl&lt;/code&gt; &lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;From the command line change into the tippecanoe directory - &lt;em&gt;This is where you have placed your geoJSON file&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;cd $HOME/tippecanoe&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Start the TileServer GL container from the command line&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/tileserver-gl&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Mac: http://localhost:8080&lt;/li&gt;
+  &lt;li&gt;Windows: http://192.168.99.100:8080
+    &lt;ul&gt;
+      &lt;li&gt;The specific IP address will be listed near the whale when you start the Quick Start Terminal. The above address is the default.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;ctl-C to quit TileServer GL&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -101,14 +141,40 @@ In this lesson we will see what Paul has decided to use for ordered and unordere
   &lt;li&gt;Go to &lt;a href=&quot;https://hub.docker.com/&quot;&gt;Docker Hub&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Search for gdal&lt;/li&gt;
   &lt;li&gt;Select &lt;a href=&quot;https://hub.docker.com/r/klokantech/gdal/&quot;&gt;klokantech/gdal&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Copy the Docker Pull Command &amp;amp; run it at command line
-&lt;label for=&quot;cmd-pull-gdal&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cmd-pull-gdal&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker pull klokantech/gdal&lt;/code&gt; &lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;Copy the Docker Pull Command &amp;amp; run it at command line &lt;code class=&quot;highlighter-rouge&quot;&gt;docker pull klokantech/gdal&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;run-some-ogr-tools&quot;&gt;Run some OGR tools&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -ti --rm -v $(pwd):/data klokantech/gdal ogrinfo PugetSound.shp -al -so&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -ti --rm -v $(pwd):/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON PS_test.geojson PugetSound.shp -Progress&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;document-installing-using-and-publishing-data-using-maputnik-for-styling&quot;&gt;Document Installing, using, and publishing data using Maputnik for styling&lt;/h2&gt;
+
+&lt;h2 id=&quot;rogers-preliminary-notes&quot;&gt;Roger’s Preliminary Notes&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;docker pull jskeates/tippecanoe&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;2, Created C:\Users\randre\tippecanoe&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;ran “docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest” in Docker Quickstart terminal&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Downloaded data file from https://raw.githubusercontent.com/pkgeo-org/pkgeo-org.github.io/master/tippecanoe/usStates.geojson&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now in Docker terminal, I can see the geojson:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;total 84852
+
+-rwxrwxrwx    1 tippecan 50        86111601 Mar  3 15:32 europe_admin0.geojson
+-rwxrwxrwx    1 tippecan 50          772518 Mar 30 00:03 usStates.geojson
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sat, 27 Jan 2018 11:48:00 -0800</pubDate>
         <link>http://localhost:4000/articles/18/Vector-Tile.html</link>

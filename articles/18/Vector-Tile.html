@@ -79,23 +79,60 @@
   <li>Supply admin password</li>
 </ul>
 
+<h2 id="install-docker-on-windows">Install Docker on Windows</h2>
+<ul>
+  <li><a href="https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows">Download</a></li>
+  <li><strong>Requires Windows 10 Pro  or Enterprise</strong>
+    <ul>
+      <li>Ensure that hardware virtualization support is turned on in the BIOS settings</li>
+    </ul>
+  </li>
+  <li><strong>Does Not Work with Windows 10 Home</strong>
+    <ul>
+      <li>Approaches to work arround this:
+        <ul>
+          <li>Can be installed on <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a></li>
+          <li>Can be installed on a virtual machine running linux</li>
+          <li><a href="https://docs.docker.com/toolbox/toolbox_install_windows/">Docker Toolbox</a>
+            <ul>
+              <li>Accept Defaults during install</li>
+              <li>Run the Quick Start Terminal</li>
+              <li>Execute the steps at the Quick Start Terminal</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
 <h2 id="install-a-tippecanoe-container">Install a Tippecanoe container</h2>
-<p>Search for Tippecanoe on <a href="https://hub.docker.com/">Docker Hub</a>. Select the <a href="https://hub.docker.com/r/jskeates/tippecanoe/">jskeates/tippecanoe repository</a>. Copy the appropriate command <label for="cmd-pull-tippe" class="margin-toggle sidenote-number"></label><input type="checkbox" id="cmd-pull-tippe" class="margin-toggle" /><span class="sidenote"><code class="highlighter-rouge">docker pull jskeates/tippecanoe</code> </span> from the <em>Docker Pull Command</em> section of the page, then paste it at the terminal prompt and hit enter to run it.</p>
+<ul>
+  <li>Search for Tippecanoe on <a href="https://hub.docker.com/">Docker Hub</a>. Select the <a href="https://hub.docker.com/r/jskeates/tippecanoe/">jskeates/tippecanoe repository</a>. Copy the appropriate command from the <em>Docker Pull Command</em> section of the page, then paste it at the terminal prompt and hit enter to run it.
+    <ul>
+      <li><code class="highlighter-rouge">docker pull jskeates/tippecanoe</code></li>
+    </ul>
+  </li>
+</ul>
 
 <h2 id="locate-a-geojson-file">Locate a geojson file</h2>
 <ul>
-  <li>usStates.geojson</li>
+  <li>Created C:\Users\randre\tippecanoe</li>
+  <li><a href="https://github.com/pkgeo-org/pkgeo-org.github.io/tree/master/tippecanoe">usStates.geojson</a> - figure out how to download the file</li>
   <li>Move to $HOME/tippecanoe</li>
 </ul>
 
 <h2 id="create-some-vector-tiles">Create some vector tiles</h2>
 <ul>
-  <li>Be sure Docker is running on your computer</li>
-  <li>Start Tippecanoe container in interactive mode
-<label for="cmd-docker-tippe" class="margin-toggle sidenote-number"></label><input type="checkbox" id="cmd-docker-tippe" class="margin-toggle" /><span class="sidenote"><code class="highlighter-rouge">docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest</code> </span></li>
-  <li>Issue tippecanoe command
-<label for="cmd-tippecanoe" class="margin-toggle sidenote-number"></label><input type="checkbox" id="cmd-tippecanoe" class="margin-toggle" /><span class="sidenote"><code class="highlighter-rouge">tippecanoe -o states.mbtiles usStates.geojson</code> </span></li>
-  <li>Exit the container when it is done. The vector tiles will be in a new folder: $HOME/tippecanoe/states.mbtiles.</li>
+  <li>Mac: Be sure Docker is running on your computer</li>
+  <li>Windows: Be in Docker Quick Start Terminal</li>
+  <li>Start Tippecanoe container in interactive mode: <code class="highlighter-rouge">docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest</code></li>
+  <li>Issue tippecanoe command: <code class="highlighter-rouge">tippecanoe -o states.mbtiles usStates.geojson</code></li>
+  <li>Exit the container when it is done. The vector tiles will be in a new folder: $HOME/tippecanoe/states.mbtiles.
+    <ul>
+      <li>$HOME is replaced with your user directory at a unix style command promt. This works for MacOS, Docker Toolbox, or Linux, but probably not for Windows</li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="install-a-tileserver-gl-container">Install a TileServer GL Container</h2>
@@ -103,17 +140,20 @@
   <li>Go to <a href="https://hub.docker.com/">Docker Hub</a></li>
   <li>Search for tileserver-gl</li>
   <li>Select <a href="https://hub.docker.com/r/klokantech/tileserver-gl/">klokantech/tileserver-gl</a></li>
-  <li>Copy the Docker Pull Command &amp; run it at command line
-<label for="cmd-pull-tsgl" class="margin-toggle sidenote-number"></label><input type="checkbox" id="cmd-pull-tsgl" class="margin-toggle" /><span class="sidenote"><code class="highlighter-rouge">docker pull klokantech/tileserver-gl</code> </span></li>
+  <li>Copy the Docker Pull Command &amp; run it at command line <code class="highlighter-rouge">docker pull klokantech/tileserver-gl</code></li>
 </ul>
 
 <h2 id="run-tileserver-gl">Run TileServer GL</h2>
 <ul>
   <li>Be sure Docker is running on your computer</li>
-  <li>From the command line change into the tippecanoe directory
-<label for="cmd-cd" class="margin-toggle sidenote-number"></label><input type="checkbox" id="cmd-cd" class="margin-toggle" /><span class="sidenote"><code class="highlighter-rouge">cd $HOME/tippecanoe</code> </span></li>
-  <li>Start the TileServer GL container from the command line
-<label for="cmd-docker-tsgl" class="margin-toggle sidenote-number"></label><input type="checkbox" id="cmd-docker-tsgl" class="margin-toggle" /><span class="sidenote"><code class="highlighter-rouge">docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/tileserver-gl</code> </span></li>
+  <li>From the command line change into the tippecanoe directory - <em>This is where you have placed your geoJSON file</em> <code class="highlighter-rouge">cd $HOME/tippecanoe</code></li>
+  <li>Start the TileServer GL container from the command line<code class="highlighter-rouge">docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/tileserver-gl</code></li>
+  <li>Mac: http://localhost:8080</li>
+  <li>Windows: http://192.168.99.100:8080
+    <ul>
+      <li>The specific IP address will be listed near the whale when you start the Quick Start Terminal. The above address is the default.</li>
+    </ul>
+  </li>
   <li>ctl-C to quit TileServer GL</li>
 </ul>
 
@@ -122,14 +162,40 @@
   <li>Go to <a href="https://hub.docker.com/">Docker Hub</a></li>
   <li>Search for gdal</li>
   <li>Select <a href="https://hub.docker.com/r/klokantech/gdal/">klokantech/gdal</a></li>
-  <li>Copy the Docker Pull Command &amp; run it at command line
-<label for="cmd-pull-gdal" class="margin-toggle sidenote-number"></label><input type="checkbox" id="cmd-pull-gdal" class="margin-toggle" /><span class="sidenote"><code class="highlighter-rouge">docker pull klokantech/gdal</code> </span></li>
+  <li>Copy the Docker Pull Command &amp; run it at command line <code class="highlighter-rouge">docker pull klokantech/gdal</code></li>
 </ul>
 
 <h2 id="run-some-ogr-tools">Run some OGR tools</h2>
 <p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogrinfo PugetSound.shp -al -so</code></p>
 
 <p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON PS_test.geojson PugetSound.shp -Progress</code></p>
+
+<h2 id="document-installing-using-and-publishing-data-using-maputnik-for-styling">Document Installing, using, and publishing data using Maputnik for styling</h2>
+
+<h2 id="rogers-preliminary-notes">Roger’s Preliminary Notes</h2>
+<ol>
+  <li>docker pull jskeates/tippecanoe</li>
+</ol>
+
+<p>2, Created C:\Users\randre\tippecanoe</p>
+
+<ol>
+  <li>
+    <p>ran “docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest” in Docker Quickstart terminal</p>
+  </li>
+  <li>
+    <p>Downloaded data file from https://raw.githubusercontent.com/pkgeo-org/pkgeo-org.github.io/master/tippecanoe/usStates.geojson</p>
+  </li>
+  <li>
+    <p>Now in Docker terminal, I can see the geojson:</p>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>total 84852
+
+-rwxrwxrwx    1 tippecan 50        86111601 Mar  3 15:32 europe_admin0.geojson
+-rwxrwxrwx    1 tippecan 50          772518 Mar 30 00:03 usStates.geojson
+</code></pre></div></div>
 
 
 
