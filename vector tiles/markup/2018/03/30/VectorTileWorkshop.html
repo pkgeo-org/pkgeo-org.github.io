@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+  <title>
+    
+      Vector Tiles using the Docker Way &middot; PKgeo
+    
+  </title>
+
+  
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+
+  <!-- Additional head bits without overriding original head -->
+</head>
+
+
+  <body class="post">
+
+    <div id="sidebar">
+  <header>
+    <div class="site-title">
+      <a href="/">
+        
+          <span class="back-arrow icon"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+</svg></span>
+        
+        PKgeo
+      </a>
+    </div>
+    <p class="lead">Blog post and instructions relating to Free Open Source Software For Geospatial (FOSS4G)</p>
+  </header>
+  <nav id="sidebar-nav-links">
+  
+    <a class="home-link "
+        href="/">Home</a>
+  
+  
+
+  
+
+  
+
+
+  
+    
+  
+
+  
+    
+      <a class="page-link "
+          href="/category/Schedule.html">Schedule</a>
+    
+  
+
+  
+    
+      <a class="page-link "
+          href="/category/about.html">About</a>
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+
+  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <a class="category-link "
+          href="/category/markup.html">Resources</a>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+      <a class="category-link "
+          href="/category/vector-tiles.html">Web Mapping with Vector Tiles</a>
+    
+  
+
+  
+
+
+  <!-- Optional additional links to insert in sidebar nav -->
+</nav>
+
+
+  
+    <span class="site-version">Currently v3.5.3</span>
+  
+
+  <nav id="sidebar-icon-links">
+  
+    <a id="github-link"
+       class="icon" title="Github Project" aria-label="Github Project"
+       href="https://github.com/pkgeo-org/hydeout">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
+</svg>
+
+    </a>
+    <a id="github-download-link"
+       class="icon" title="Download" aria-label="Download"
+       href="https://github.com/pkgeo-org/hydeout/archive/v3.5.3.zip">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+    </a>
+  
+
+  <a id="subscribe-link"
+     class="icon" title="Subscribe" aria-label="Subscribe"
+     href="/feed.xml">
+    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <circle cx="6.18" cy="17.82" r="2.18"/>
+    <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+</svg>
+  </a>
+
+  
+  
+  
+  
+
+  
+    <a id="tags-link"
+       class="icon"
+       title="Tags" aria-label="Tags"
+       href="/tags.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+    </a>
+  
+
+  
+    <a id="search-link"
+       class="icon"
+       title="Search" aria-label="Search"
+       href="/search.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+    </a>
+  
+
+  <!-- Optional additional links to insert for icons links -->
+</nav>
+  <p>
+  &copy; 2018.
+  <a href="/LICENSE.md">MIT License.</a>
+</p>
+
+</div>
+
+    <main class="container">
+      <header>
+  <h1 class="post-title">Vector Tiles using the Docker Way</h1>
+</header>
+<div class="content">
+  <div class="post-meta">
+  <span class="post-date">30 Mar 2018</span>
+  <span class="post-categories">
+    
+      &bull;
+
+      
+      
+      
+
+      
+        <a href="/category/vector-tiles.html">
+          Vector Tiles
+        </a>
+      
+    
+      &bull;
+
+      
+      
+      
+
+      
+        Markup
+      
+    
+  </span>
+</div>
+
+  <div class="post-body">
+    <p>In this lesson we will learn to use Docker containers to create and serve vector tiles on your local machine.
+<!--more--></p>
+
+<h2 id="install-docker-on-macos">Install Docker on MacOS</h2>
+<ul>
+  <li>Docker for MacOS <a href="https://store.docker.com/editions/community/docker-ce-desktop-mac">Here</a>
+    <ol>
+      <li>Mount Docker.dmg</li>
+      <li>Drag Docker App onto Applications Shortcut</li>
+      <li>Launch Docker</li>
+      <li>Agree to run application from Internet</li>
+      <li>Supply admin password</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="install-docker-on-windows">Install Docker on Windows</h2>
+<ul>
+  <li>Docker for Windows <a href="https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows">Here</a>
+    <ol>
+      <li><strong>Requires Windows 10 Pro  or Enterprise</strong></li>
+      <li>Ensure that hardware virtualization support is turned on in the BIOS settings</li>
+    </ol>
+  </li>
+  <li><strong>Does Not Work with Windows 10 Home</strong></li>
+  <li>Approaches to work arround this:
+    <ol>
+      <li>Can be installed on <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a>
+      + Can be installed on a virtual machine running linux
+      + <a href="https://docs.docker.com/toolbox/toolbox_install_windows/">Docker Toolbox</a>
+        <ul>
+          <li>Accept Defaults during install</li>
+          <li>Run the Quick Start Terminal</li>
+          <li>Execute the steps at the Quick Start Terminal</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="install-a-gdalogr-tools-container">Install a GDAL/OGR tools container</h2>
+<ul>
+  <li>Go to <a href="https://hub.docker.com/">Docker Hub</a></li>
+  <li>Search for gdal</li>
+  <li>Select <a href="https://hub.docker.com/r/klokantech/gdal/">klokantech/gdal</a></li>
+  <li>Copy the Docker Pull Command &amp; run it at command line <code class="highlighter-rouge">docker pull klokantech/gdal</code></li>
+</ul>
+
+<h2 id="convert-shape-file-into-geojson-file">Convert Shape file into geoJSON file</h2>
+<ol>
+  <li>Download Zipped files of King County Censcus Block <a href="https://drive.google.com/open?id=1tgXXA9rZaMXdLL-eqh0GnU4qon6QoRsI">Here</a></li>
+  <li>Run OGR tool to convert shape file into geojson</li>
+</ol>
+
+<p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogrinfo PugetSound.shp -al -so</code></p>
+
+<p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON PS_test.geojson PugetSound.shp -Progress</code></p>
+
+<h2 id="install-a-tippecanoe-container">Install a Tippecanoe container</h2>
+<ol>
+  <li>Search for Tippecanoe on <a href="https://hub.docker.com/">Docker Hub</a>.
+    <ul>
+      <li>Select the <a href="https://hub.docker.com/r/jskeates/tippecanoe/">jskeates/tippecanoe repository</a></li>
+      <li>Copy the appropriate command from the <em>Docker Pull Command</em> section of the page, then paste it at the terminal prompt and hit enter to run it.
+<code class="highlighter-rouge">docker pull jskeates/tippecanoe</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="locate-a-geojson-file">Locate a geojson file</h2>
+<ol>
+  <li>Down load KC Census Geojson data <a href="https://drive.google.com/file/d/1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg/view?usp=sharing">Here</a></li>
+  <li>Created C:\Users\randre\tippecanoe
+    <ul>
+      <li><a href="https://github.com/pkgeo-org/pkgeo-org.github.io/tree/master/tippecanoe">usStates.geojson</a> - figure out how to download the file</li>
+      <li>Move to $HOME/tippecanoe</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="create-some-vector-tiles">Create some vector tiles</h2>
+<ul>
+  <li>Mac: Be sure Docker is running on your computer</li>
+  <li>Windows: Be in Docker Quick Start Terminal</li>
+  <li>Start Tippecanoe container in interactive mode: <code class="highlighter-rouge">docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest</code></li>
+  <li>Issue tippecanoe command: <code class="highlighter-rouge">tippecanoe -o states.mbtiles usStates.geojson</code></li>
+  <li>Exit the container when it is done. The vector tiles will be in a new folder: $HOME/tippecanoe/states.mbtiles.
+    <ul>
+      <li>$HOME is replaced with your user directory at a unix style command promt. This works for MacOS, Docker Toolbox, or Linux, but probably not for Windows</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="install-a-tileserver-gl-container">Install a TileServer GL Container</h2>
+<ul>
+  <li>Go to <a href="https://hub.docker.com/">Docker Hub</a></li>
+  <li>Search for tileserver-gl</li>
+  <li>Select <a href="https://hub.docker.com/r/klokantech/tileserver-gl/">klokantech/tileserver-gl</a></li>
+  <li>Copy the Docker Pull Command &amp; run it at command line <code class="highlighter-rouge">docker pull klokantech/tileserver-gl</code></li>
+</ul>
+
+<h2 id="run-tileserver-gl">Run TileServer GL</h2>
+<ul>
+  <li>Be sure Docker is running on your computer</li>
+  <li>From the command line change into the tippecanoe directory - <em>This is where you have placed your geoJSON file</em> <code class="highlighter-rouge">cd $HOME/tippecanoe</code></li>
+  <li>Start the TileServer GL container from the command line<code class="highlighter-rouge">docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/tileserver-gl</code></li>
+  <li>Mac: http://localhost:8080</li>
+  <li>Windows: http://192.168.99.100:8080
+    <ul>
+      <li>The specific IP address will be listed near the whale when you start the Quick Start Terminal. The above address is the default.</li>
+    </ul>
+  </li>
+  <li>ctl-C to quit TileServer GL</li>
+</ul>
+
+<h2 id="document-installing-using-and-publishing-data-using-maputnik-for-styling">Document Installing, using, and publishing data using Maputnik for styling</h2>
+
+<h2 id="rogers-preliminary-notes">Roger’s Preliminary Notes</h2>
+<ol>
+  <li>docker pull jskeates/tippecanoe</li>
+</ol>
+
+<p>2, Created C:\Users\randre\tippecanoe</p>
+
+<ol>
+  <li>
+    <p>ran “docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest” in Docker Quickstart terminal</p>
+  </li>
+  <li>
+    <p>Downloaded data file from https://raw.githubusercontent.com/pkgeo-org/pkgeo-org.github.io/master/tippecanoe/usStates.geojson</p>
+  </li>
+  <li>
+    <p>Now in Docker terminal, I can see the geojson:</p>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>total 84852
+
+-rwxrwxrwx    1 tippecan 50        86111601 Mar  3 15:32 europe_admin0.geojson
+-rwxrwxrwx    1 tippecan 50          772518 Mar 30 00:03 usStates.geojson
+</code></pre></div></div>
+
+    
+
+
+
+<div class="post-tags">
+  
+    
+    <a href="/tags.html#post-formats">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">Post Formats</span>
+    </a>
+  
+    
+    <a href="/tags.html#readability">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">readability</span>
+    </a>
+  
+    
+    <a href="/tags.html#standard">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">standard</span>
+    </a>
+  
+</div>
+  </div>
+
+  
+  <section class="comments">
+    <h2>Comments</h2>
+    
+  <p>
+    You are seeing this because your Disqus shortname is not properly set. To
+    configure Disqus, you should edit your <code>_config.yml</code> to include
+    either a <code>disqus.shortname</code> variable.
+  </p>
+
+  <p>
+    If you do not wish to use Disqus, override the
+    <code>comments.html</code> partial for this theme.
+  </p>
+
+
+  </section>
+
+  <section class="related">
+  <h2>Related Posts</h2>
+  <ul class="posts-list">
+    
+      <li>
+        <h3>
+          <a href="/vector%20tiles/2018/04/02/Introduction.html">
+            Introduction
+            <small>02 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/markup/2012/01/31/markup-title-with-special-characters.html">
+            Markup: Title with Special&nbsp;---&nbsp;Characters
+            <small>31 Jan 2012</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/post%20formats/2010/01/07/post-modified.html">
+            Post: Modified Date
+            <small>07 Jan 2010</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</section>
+
+</div>
+
+    </main>
+
+    <!-- Optional footer content -->
+
+  </body>
+</html>
