@@ -1,6 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-05T17:54:03-07:00</updated><id>http://localhost:4000/</id><title type="html">PKgeo</title><subtitle>Blog post and instructions relating to Free Open Source Software For Geospatial (FOSS4G)</subtitle><author><name>Peter Keum</name></author><entry><title type="html">Introduction</title><link href="http://localhost:4000/vector%20tiles/2018/04/02/Introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2018-04-02T00:00:00-07:00</published><updated>2018-04-02T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/02/Introduction</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/02/Introduction.html">&lt;p&gt;Hello there. This page is contains materials for Washington URISA 2018 Workshop. This workshop describes and demonstrates various FOSS4G (Free Open Source Software for Geospatial) tools to create &lt;a href=&quot;https://en.wikipedia.org/wiki/Vector_tiles&quot;&gt;&lt;em&gt;vector tiles&lt;/em&gt;&lt;/a&gt;, to stylize vector tiles and to build web-maps.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-21T20:15:51-07:00</updated><id>http://localhost:4000/</id><title type="html">PKgeo</title><subtitle>Blog post and instructions relating to Free Open Source Software For Geospatial (FOSS4G)</subtitle><author><name>Peter Keum</name></author><entry><title type="html">Pre-Installation for Vector Tile Workshop</title><link href="http://localhost:4000/vector%20tiles/markup/2018/04/13/PreInstallation.html" rel="alternate" type="text/html" title="Pre-Installation for Vector Tile Workshop" /><published>2018-04-13T00:00:00-07:00</published><updated>2018-04-13T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/markup/2018/04/13/PreInstallation</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/markup/2018/04/13/PreInstallation.html">&lt;p&gt;Following installation is required before the workshop.&lt;/p&gt;
 
-&lt;p&gt;We’ll explore FOSS4G workflow to create web-maps from vector tiles. We’ll have presentations with demonstrations which will follow with hands-on exercises to style vector tiles and create web-maps. In addition, we’ll be also be exploring Mapbox Studio workflow as well.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Create GitHub account, &lt;a href=&quot;https://github.com&quot;&gt;https://github.com&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;Please go &lt;a href=&quot;https://services.github.com/on-demand/intro-to-github/create-github-account&quot;&gt;here for how-to&lt;/a&gt;. We’ll use GitHub account to share webmaps we will build at the workshop.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create Tilehosting account.
+    &lt;ul&gt;
+      &lt;li&gt;Please go &lt;a href=&quot;https://admin.tilehosting.com/auth/widget?mode=select&quot;&gt;here&lt;/a&gt; to create account. Tilehosting will provide vector basemaps for web map.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In order to install Docker and other software during the workshop, the user needs to have Administrative level privilege.&lt;/li&gt;
+  &lt;li&gt;Please download Docker Community Edition according to one’s own Operating System.
+Please go &lt;a href=&quot;https://www.docker.com/community-edition&quot;&gt;here&lt;/a&gt; for your Operating System. For Windows 10 Home Edition, pleaes follow steps below for
+&lt;!--more--&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;install-docker-on-macos&quot;&gt;Install Docker on MacOS&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Docker for MacOS &lt;a href=&quot;https://store.docker.com/editions/community/docker-ce-desktop-mac&quot;&gt;Here&lt;/a&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Mount Docker.dmg&lt;/li&gt;
+      &lt;li&gt;Drag Docker App onto Applications Shortcut&lt;/li&gt;
+      &lt;li&gt;Launch Docker&lt;/li&gt;
+      &lt;li&gt;Agree to run application from Internet&lt;/li&gt;
+      &lt;li&gt;Supply admin password&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;install-docker-on-windows-10-for-pro-and-home-edition&quot;&gt;Install Docker on Windows 10 for Pro and Home Edition&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Docker for Windows &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows&quot;&gt;Here&lt;/a&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;strong&gt;Requires Windows 10 Pro or Enterprise&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Ensure that hardware virtualization support is turned on in the BIOS settings&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Does Not Work with Windows 10 Home Edition&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Approaches to work arround this:
+    &lt;ol&gt;
+      &lt;li&gt;Can be installed on &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10&quot;&gt;Windows Subsystem for Linux&lt;/a&gt;
+      + Can be installed on a virtual machine running linux
+      + &lt;a href=&quot;https://docs.docker.com/toolbox/toolbox_install_windows/&quot;&gt;Docker Toolbox&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Accept Defaults during install&lt;/li&gt;
+          &lt;li&gt;Run the Quick Start Terminal&lt;/li&gt;
+          &lt;li&gt;Execute the steps at the &lt;em&gt;Quick Start Terminal&lt;/em&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Peter Keum</name></author><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html">Following installation is required before the workshop.</summary></entry><entry><title type="html">Introduction</title><link href="http://localhost:4000/vector%20tiles/2018/04/02/Introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2018-04-02T00:00:00-07:00</published><updated>2018-04-02T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/02/Introduction</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/02/Introduction.html">&lt;p&gt;Hello there. This page is contains materials for Washington URISA 2018 Workshop. This workshop describes and demonstrates various FOSS4G (Free Open Source Software for Geospatial) tools to create &lt;a href=&quot;https://en.wikipedia.org/wiki/Vector_tiles&quot;&gt;&lt;em&gt;vector tiles&lt;/em&gt;&lt;/a&gt;, to stylize vector tiles and to build web-maps.&lt;/p&gt;
+
+&lt;p&gt;We’ll explore FOSS4G workflow to create web-maps from vector tiles. We’ll have presentations with demonstrations which will follow with hands-on exercises. We’ll create vector tiles then style them to create web-maps. In addition, we’ll be exploring &lt;a href=&quot;https://www.mapbox.com/mapbox-studio/&quot;&gt;Mapbox Studio&lt;/a&gt; workflow as well.&lt;/p&gt;
 
 &lt;p&gt;Who are we? We are two FOSS4G enthuists GIS professionals working for King County, Washington.&lt;/p&gt;
 
@@ -147,429 +201,6 @@
 
 -rwxrwxrwx    1 tippecan 50        86111601 Mar  3 15:32 europe_admin0.geojson
 -rwxrwxrwx    1 tippecan 50          772518 Mar 30 00:03 usStates.geojson
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Peter Keum</name></author><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html">In this lesson we will learn to use Docker containers to create and serve vector tiles on your local machine.</summary></entry><entry><title type="html">Markup: Title with Special — Characters</title><link href="http://localhost:4000/markup/2012/01/31/markup-title-with-special-characters.html" rel="alternate" type="text/html" title="Markup: Title with Special&amp;nbsp;---&amp;nbsp;Characters" /><published>2012-01-31T00:00:00-08:00</published><updated>2012-01-31T09:23:27-08:00</updated><id>http://localhost:4000/markup/2012/01/31/markup-title-with-special-characters</id><content type="html" xml:base="http://localhost:4000/markup/2012/01/31/markup-title-with-special-characters.html">&lt;p&gt;Putting special characters in the title should have no adverse effect on the layout or functionality.&lt;/p&gt;
-
-&lt;p&gt;The title above has none-breaking spaces before and after the m-dash.&lt;/p&gt;
-
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;nbsp;&lt;/span&gt;---&lt;span class=&quot;ni&quot;&gt;&amp;amp;nbsp;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;latin-character-tests&quot;&gt;Latin Character Tests&lt;/h2&gt;
-
-&lt;p&gt;This is a test to see if the fonts used in this theme support basic Latin characters.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tr&gt;
-    &lt;td&gt;
-      !
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      &amp;#8220;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      #
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      $
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      %
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      &amp;amp;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      &amp;#8216;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      (
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      )
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      *
-    &lt;/td&gt;
-  &lt;/tr&gt;
-
-  &lt;tr&gt;
-    &lt;td&gt;
-      +
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      ,
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      &amp;#8211;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      .
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      /
-    &lt;/td&gt;
-
-    &lt;td&gt;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      1
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      2
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      3
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      4
-    &lt;/td&gt;
-  &lt;/tr&gt;
-
-  &lt;tr&gt;
-    &lt;td&gt;
-      5
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      6
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      7
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      8
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      9
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      :
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      ;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      &amp;gt;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      =
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      &amp;lt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-
-  &lt;tr&gt;
-    &lt;td&gt;
-      ?
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      @
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      A
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      B
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      C
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      D
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      E
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      F
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      G
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      H
-    &lt;/td&gt;
-  &lt;/tr&gt;
-
-  &lt;tr&gt;
-    &lt;td&gt;
-      I
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      J
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      K
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      L
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      M
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      N
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      O
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      P
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      Q
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      R
-    &lt;/td&gt;
-  &lt;/tr&gt;
-
-  &lt;tr&gt;
-    &lt;td&gt;
-      S
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      T
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      U
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      V
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      W
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      X
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      Y
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      Z
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      [
-    &lt;/td&gt;
-
-    &lt;td&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-
-  &lt;tr&gt;
-    &lt;td&gt;
-      ]
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      ^
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      _
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      `
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      a
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      b
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      c
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      d
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      e
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      f
-    &lt;/td&gt;
-  &lt;/tr&gt;
-
-  &lt;tr&gt;
-    &lt;td&gt;
-      g
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      h
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      i
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      j
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      k
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      l
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      m
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      n
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      o
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      p
-    &lt;/td&gt;
-  &lt;/tr&gt;
-
-  &lt;tr&gt;
-    &lt;td&gt;
-      q
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      r
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      s
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      t
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      u
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      v
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      w
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      x
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      y
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      z
-    &lt;/td&gt;
-  &lt;/tr&gt;
-
-  &lt;tr&gt;
-    &lt;td&gt;
-      {
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      |
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      }
-    &lt;/td&gt;
-
-    &lt;td&gt;
-      ~
-    &lt;/td&gt;
-
-    &lt;td&gt;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-    &lt;/td&gt;
-
-    &lt;td&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;</content><author><name>Peter Keum</name></author><category term="html" /><category term="markup" /><category term="post" /><category term="title" /><summary type="html">Putting special characters in the title should have no adverse effect on the layout or functionality.</summary></entry><entry><title type="html">Post: Modified Date</title><link href="http://localhost:4000/post%20formats/2010/01/07/post-modified.html" rel="alternate" type="text/html" title="Post: Modified Date" /><published>2010-01-07T00:00:00-08:00</published><updated>2017-03-09T10:01:27-08:00</updated><id>http://localhost:4000/post%20formats/2010/01/07/post-modified</id><content type="html" xml:base="http://localhost:4000/post%20formats/2010/01/07/post-modified.html">&lt;p&gt;This post has been updated and should show a modified date if &lt;code class=&quot;highlighter-rouge&quot;&gt;last_modified_at&lt;/code&gt; is used in the layout.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Peter Keum</name></author><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html">In this lesson we will learn to use Docker containers to create and serve vector tiles on your local machine.</summary></entry><entry><title type="html">Post: Modified Date</title><link href="http://localhost:4000/post%20formats/2010/01/07/post-modified.html" rel="alternate" type="text/html" title="Post: Modified Date" /><published>2010-01-07T00:00:00-08:00</published><updated>2017-03-09T10:01:27-08:00</updated><id>http://localhost:4000/post%20formats/2010/01/07/post-modified</id><content type="html" xml:base="http://localhost:4000/post%20formats/2010/01/07/post-modified.html">&lt;p&gt;This post has been updated and should show a modified date if &lt;code class=&quot;highlighter-rouge&quot;&gt;last_modified_at&lt;/code&gt; is used in the layout.&lt;/p&gt;
 
 &lt;p&gt;Plugins like &lt;a href=&quot;https://github.com/jekyll/jekyll-feed&quot;&gt;&lt;strong&gt;jekyll-sitemap&lt;/strong&gt;&lt;/a&gt; use this field to add a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;lastmod&amp;gt;&lt;/code&gt; tag your &lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap.xml&lt;/code&gt;.&lt;/p&gt;</content><author><name>Peter Keum</name></author><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html">This post has been updated and should show a modified date if last_modified_at is used in the layout.</summary></entry></feed>
