@@ -11,7 +11,7 @@
 
   <title>
     
-      Generating Vector Tiles using the Docker Containers for Mac OS &middot; PKgeo
+      Pre-Installation for Vector Tile Workshop &middot; PKgeo
     
   </title>
 
@@ -246,11 +246,11 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Generating Vector Tiles using the Docker Containers for Mac OS</h1>
+  <h1 class="post-title">Pre-Installation for Vector Tile Workshop</h1>
 </header>
 <div class="content">
   <div class="post-meta">
-  <span class="post-date">26 Apr 2018</span>
+  <span class="post-date">07 May 2018</span>
   <span class="post-categories">
     
       &bull;
@@ -265,189 +265,80 @@
         </a>
       
     
-      &bull;
-
-      
-      
-      
-
-      
-        Markup
-      
-    
   </span>
 </div>
 
   <div class="post-body">
-    <p>In this lesson we will learn to use Docker containers to create and serve vector tiles on your local machine.
+    <p>Please bring your laptop with the following items pre-installed. Instructions  are found below. Please feel free to contact us for any questions or issues with following the installation instructions. 
 <!--more--></p>
 
-<h2 id="1-install-docker-on-macos">1. Install Docker on MacOS</h2>
-
 <ul>
-  <li>Download <a href="https://store.docker.com/editions/community/docker-ce-desktop-mac">Docker Community Edition for Mac</a></li>
-  <li>Mount Docker.dmg</li>
-  <li>Drag Docker App onto Applications Shortcut</li>
-  <li>Launch Docker (double-click Docker Icon)</li>
-  <li>Agree to run application from Internet</li>
-  <li>Supply admin password when prompted</li>
-</ul>
-
-<h2 id="2-install-a-gdalogr-tools-container">2. Install a GDAL/OGR tools container</h2>
-
-<ul>
-  <li>Go to <a href="https://hub.docker.com/">Docker Hub</a></li>
-  <li>Search for gdal</li>
-  <li>Select <a href="https://hub.docker.com/r/klokantech/gdal/">klokantech/gdal</a></li>
-  <li>
-    <p>Copy the Docker Pull Command &amp; run it at the Terminal prompt</p>
-
-    <p><code class="highlighter-rouge">docker pull klokantech/gdal</code></p>
-  </li>
-</ul>
-
-<h2 id="3-convert-shape-file-into-geojson-file">3. Convert shape file into GeoJSON file</h2>
-<ul>
-  <li>Download zipped files of <a href="https://drive.google.com/open?id=1tgXXA9rZaMXdLL-eqh0GnU4qon6QoRsI">King County Census Blocks</a></li>
-  <li>Place zip file into your local directory</li>
-  <li>Unzip zip file</li>
-  <li>Use OGR tools at the Terminal prompt
+  <li>Create a <a href="https://github.com">GitHub</a> account.
     <ul>
-      <li>
-        <p><em>ogrinfo</em>: check the shape file’s information</p>
-
-        <p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogrinfo PugetSound.shp -al -so</code></p>
-      </li>
-      <li>
-        <p><em>ogr2ogr</em>: convert shape file to GeoJSON file</p>
-
-        <p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON PS_test.geojson PugetSound.shp -Progress</code></p>
-      </li>
+      <li>If you have an existing GitHub account please be sure you can successfully log in.</li>
+      <li>Please follow the <a href="https://services.github.com/on-demand/intro-to-github/create-github-account">GitHub how-to</a>. We will use the GitHub accounts to share the web maps we will build during the workshop.</li>
     </ul>
   </li>
-</ul>
-
-<h2 id="4-install-a-tippecanoe-container-which-is-a-utility-tool-to-create-vector-tiles">4. Install a Tippecanoe container which is a utility tool to create vector tiles</h2>
-<ul>
-  <li>Search for Tippecanoe on <a href="https://hub.docker.com/">Docker Hub</a></li>
-  <li>Select the <a href="https://hub.docker.com/r/jskeates/tippecanoe/">jskeates/tippecanoe repository</a></li>
-  <li>Copy the appropriate command from the <em>Docker Pull Command</em> section of the page</li>
-  <li>
-    <p>Paste it at the Terminal prompt, and hit enter to run it</p>
-
-    <p><code class="highlighter-rouge">docker pull jskeates/tippecanoe</code></p>
-  </li>
-</ul>
-
-<h2 id="5-locate-a-geojson-file">5. Locate a geoJSON file</h2>
-<ul>
-  <li>Download one or both of the following geoJSON files:
+  <li>Create a Tilehosting account.
     <ul>
-      <li><a href="https://drive.google.com/file/d/1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg/view?usp=sharing">King County census geoJSON data</a></li>
-      <li><a href="https://raw.githubusercontent.com/pkgeo-org/jekyll-site-code/master/tippecanoe/usStates.geojson">United States boundary geoJSON data</a>
-        <ul>
-          <li>Use <em>File-&gt;Save Page As</em> or similar command from your browser to save on your computer</li>
-          <li>Be sure to save the file as <em>usStates.geojson</em></li>
-        </ul>
-      </li>
+      <li>Please go to <a href="https://admin.tilehosting.com/auth/widget?mode=select">Tilehosting.com</a> to create an account. Tilehosting will provide vector basemaps for our web maps.</li>
     </ul>
   </li>
-  <li>If neccesary, move the downloaded files into your local tippecanoe subdirectory</li>
-</ul>
-
-<h2 id="6-create-some-vector-tiles">6. Create some vector tiles</h2>
-<ul>
-  <li>Ensure Docker is running on your computer</li>
   <li>
-    <p>Start Tippecanoe container in interactive mode at the Terminal prompt</p>
-
-    <p><code class="highlighter-rouge">docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest</code></p>
+    <p>In order to install Docker and other software during the workshop, the user needs to have <strong>Administrative level privileges</strong>. You will not be able to complete the exercises without administrative privileges.</p>
   </li>
-  <li>You will see your command prompt change to look like <code class="highlighter-rouge">bash-4.3$</code></li>
-  <li>
-    <p>Use the tippecanoe command at the Terminal prompt to create vector tiles from the geoJSON file</p>
-
-    <p><code class="highlighter-rouge">tippecanoe -o states.mbtiles usStates.geojson</code></p>
-  </li>
-  <li>
-    <p>Exit the container when it is done</p>
-
-    <p><code class="highlighter-rouge">exit</code></p>
-  </li>
-  <li>The vector tiles will be in a new folder: $HOME/tippecanoe/states.mbtiles.
+  <li>Download and install Node for your operating system.
     <ul>
-      <li>$HOME is replaced with your user directory at a unix style command promt.</li>
+      <li>Follow the <a href="https://nodejs.org/en/download/">Node Download Instructions</a>.</li>
     </ul>
   </li>
-</ul>
-
-<h2 id="7-install-a-tileserver-gl-container">7. Install a TileServer GL container</h2>
-<ul>
-  <li>Go to <a href="https://hub.docker.com/">Docker Hub</a></li>
-  <li>Search for tileserver-gl</li>
-  <li>Select <a href="https://hub.docker.com/r/klokantech/tileserver-gl/">klokantech/tileserver-gl</a></li>
-  <li>Copy the Docker pull command &amp; run it at the Terminal prompt
-<code class="highlighter-rouge">docker pull klokantech/tileserver-gl</code></li>
-</ul>
-
-<h2 id="8-run-tileserver-gl">8. Run TileServer GL</h2>
-<ul>
-  <li>Ensure Docker is running on your computer</li>
-  <li>From the command line change into the tippecanoe directory
+  <li>After Installing Node, please install http-server, which is very simple http server that we’ll run locally for testing and demonstration purposes.
     <ul>
-      <li><em>This is where you should have placed your geoJSON file</em></li>
+      <li>Follow <a href="https://www.npmjs.com/package/http-server">Installation Instructions</a></li>
     </ul>
-
-    <p><code class="highlighter-rouge">cd $HOME/tippecanoe</code></p>
+  </li>
+  <li>Install Docker
+    <ul>
+      <li>Please download Docker Community Edition for your Operating System.</li>
+      <li>Windows 10 Home Edition is not compatible with Docker Community Edition, you will need to install <a href="https://docs.docker.com/toolbox/toolbox_install_windows/">Docker Toolbox</a></li>
+      <li>If you have difficulty installing Docker, please contact us.</li>
+    </ul>
+  </li>
+  <li>Install Docker on MacOS
+    <ol>
+      <li><a href="https://store.docker.com/editions/community/docker-ce-desktop-mac">Docker Community Edition</a></li>
+      <li>Mount Docker.dmg</li>
+      <li>Drag Docker App onto Applications Shortcut</li>
+      <li>Launch Docker</li>
+      <li>Agree to run application from Internet</li>
+      <li>Supply admin password</li>
+    </ol>
   </li>
   <li>
-    <p>Start the TileServer GL container from the command lin
-<code class="highlighter-rouge">docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/tileserver-gl</code></p>
+    <p>Windows users may need to <a href="https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/">enable virtualization for your laptop in the system configuration</a>.</p>
   </li>
-  <li>Test that the vector tiles are being servered by entering <a href="http://localhost:8080">http://localhost:8080/</a> into your browser’s address bar</li>
-  <li>After testing, hit ctl-C to quit TileServer GL</li>
+  <li>Install Docker on Windows (Pro and Enterprise)
+    <ol>
+      <li><a href="https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows">Docker Community Edition</a></li>
+      <li>Requires Windows 10 Pro or Enterprise</li>
+      <li><strong>Does Not Work with Windows 10 Home Edition</strong></li>
+    </ol>
+  </li>
+  <li>Install Docker on Windows 10 Home:
+    <ol>
+      <li><a href="https://docs.docker.com/toolbox/toolbox_install_windows/">Docker Toolbox</a></li>
+      <li>Accept Defaults during install</li>
+      <li>Run the Quick Start Terminal</li>
+      <li>Execute the steps at the Quick Start Terminal</li>
+    </ol>
+  </li>
 </ul>
-
-<h1 id="to-do-document-installing-using-and-publishing-data-using-maputnik-for-styling">TO DO: Document Installing, using, and publishing data using Maputnik for styling</h1>
 
     
 
 
 
 <div class="post-tags">
-  
-    
-    <a href="/tags.html#post-formats">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">Post Formats</span>
-    </a>
-  
-    
-    <a href="/tags.html#readability">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">readability</span>
-    </a>
-  
-    
-    <a href="/tags.html#standard">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">standard</span>
-    </a>
   
 </div>
   </div>
@@ -477,27 +368,27 @@
     
       <li>
         <h3>
-          <a href="/vector%20tiles/markup/2018/05/01/VectorTileWorkshop-Windows10Home.html">
-            Generating Vector Tiles using the Docker Containers for Windows 10 (Home)
-            <small>01 May 2018</small>
+          <a href="/vector%20tiles/2018/05/08/Introduction.html">
+            Introduction
+            <small>08 May 2018</small>
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/vector%20tiles/markup/2018/04/26/VectorTileWorkshop-Windows10.html">
+          <a href="/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10.html">
             Generating Vector Tiles using the Docker Containers for Windows 10 (Pro and Enterprise)
-            <small>26 Apr 2018</small>
+            <small>06 May 2018</small>
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/vector%20tiles/markup/2018/04/13/PreInstallation.html">
-            Pre-Installation for Vector Tile Workshop
-            <small>13 Apr 2018</small>
+          <a href="/vector%20tiles/2018/05/05/VectorTileWorkshop-MacOS.html">
+            Generating Vector Tiles using the Docker Containers for Mac OS
+            <small>05 May 2018</small>
           </a>
         </h3>
       </li>

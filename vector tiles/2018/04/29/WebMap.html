@@ -11,7 +11,7 @@
 
   <title>
     
-      Tags &middot; PKgeo
+      Creating Simple Web Map from vector tiles  &middot; PKgeo
     
   </title>
 
@@ -35,7 +35,7 @@
 </head>
 
 
-  <body class="tags">
+  <body class="post">
 
     <div id="sidebar">
   <header>
@@ -246,96 +246,156 @@
 
     <main class="container">
       <header>
-  <h1 class="page-title">Tags</h1>
+  <h1 class="post-title">Creating Simple Web Map from vector tiles </h1>
 </header>
 <div class="content">
-  <!-- See https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
-<!-- With added pipe to handle lack of sort_natural -->
+  <div class="post-meta">
+  <span class="post-date">29 Apr 2018</span>
+  <span class="post-categories">
+    
+      &bull;
 
-<!-- site_tags: post formats|Post Formats,readability|readability,standard|standard -->
+      
+      
+      
 
-<!-- tag_words: post formats|Post Formatsreadability|readabilitystandard|standard -->
-
-<div id="tags-page">
-  <div class="tags-list">
+      
+        <a href="/category/vector-tiles.html">
+          Vector Tiles
+        </a>
+      
     
-    
-    <a href="#post-formats" class="tag-link">
-      <span class="tag-name">Post Formats</span>
-      <span class="tag-count">1</span>
-    </a>
-    
-    
-    <a href="#readability" class="tag-link">
-      <span class="tag-name">readability</span>
-      <span class="tag-count">1</span>
-    </a>
-    
-    
-    <a href="#standard" class="tag-link">
-      <span class="tag-name">standard</span>
-      <span class="tag-count">1</span>
-    </a>
-    
-  </div>
-
-  <hr/>
-
-  <div class="posts-by-tag">
-    
-    
-    <div id="post-formats" class="posts-for-tag">
-      <h2>Post Formats</h2>
-      <ul class="posts-list">
-        
-          <li>
-            <h3>
-              <a href="/vector%20tiles/2018/04/29/WebMap.html">
-                Creating Simple Web Map from vector tiles 
-                <small>29 Apr 2018</small>
-              </a>
-            </h3>
-          </li>
-        
-      </ul>
-    </div>
-    
-    
-    <div id="readability" class="posts-for-tag">
-      <h2>readability</h2>
-      <ul class="posts-list">
-        
-          <li>
-            <h3>
-              <a href="/vector%20tiles/2018/04/29/WebMap.html">
-                Creating Simple Web Map from vector tiles 
-                <small>29 Apr 2018</small>
-              </a>
-            </h3>
-          </li>
-        
-      </ul>
-    </div>
-    
-    
-    <div id="standard" class="posts-for-tag">
-      <h2>standard</h2>
-      <ul class="posts-list">
-        
-          <li>
-            <h3>
-              <a href="/vector%20tiles/2018/04/29/WebMap.html">
-                Creating Simple Web Map from vector tiles 
-                <small>29 Apr 2018</small>
-              </a>
-            </h3>
-          </li>
-        
-      </ul>
-    </div>
-    
-  </div>
+  </span>
 </div>
+
+  <div class="post-body">
+    <ol>
+  <li>Download index.html from <a href="url">here</a> and save into new clean directory</li>
+  <li>Copy previously exported Style.json file into same directory location as created from above step 1</li>
+  <li>
+    <p>Open a style editor and edit line 13 and 14
+<code class="highlighter-rouge">"center": [
+ 47.613,
+ -122.3988
+  ],</code> and change to 47.613 and -122.3988</p>
+  </li>
+  <li>
+    <p>Make sure to enter your own <a href="url">Tilehosting</a> Maps API key</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">"sources": {
+ "openmaptiles": {
+   "type": "vector",
+   "url": "https://free.tilehosting.com/data/v3.json?key=type your API key"
+ }
+  },
+  "sprite": "https://openmaptiles.github.io/klokantech-basic-gl-style/sprite",
+  "glyphs": "https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key=type your API key",</code></p>
+  </li>
+  <li>Go to <a href="http://blockbuilder.org/">Bl.ock Builder</a> and Click Start Coding button on top right.</li>
+  <li>Login on top right with your GitHub login.</li>
+  <li>Delete existing code in index.html and copy index.html from step 1</li>
+  <li>Press + button on top far right side to load a new file then name style.json</li>
+  <li>Load the style.json file from step 2</li>
+  <li>Click Save button on top</li>
+  <li>Once saved, click view bl.ock and new tab will open with map view showing Maputnik style</li>
+</ol>
+
+    
+
+
+
+<div class="post-tags">
+  
+    
+    <a href="/tags.html#post-formats">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">Post Formats</span>
+    </a>
+  
+    
+    <a href="/tags.html#readability">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">readability</span>
+    </a>
+  
+    
+    <a href="/tags.html#standard">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">standard</span>
+    </a>
+  
+</div>
+  </div>
+
+  <!-- 
+  <section class="comments">
+    <h2>Comments</h2>
+    
+  <p>
+    You are seeing this because your Disqus shortname is not properly set. To
+    configure Disqus, you should edit your <code>_config.yml</code> to include
+    either a <code>disqus.shortname</code> variable.
+  </p>
+
+  <p>
+    If you do not wish to use Disqus, override the
+    <code>comments.html</code> partial for this theme.
+  </p>
+
+
+  </section>
+ -->
+
+  <section class="related">
+  <h2>Related Posts</h2>
+  <ul class="posts-list">
+    
+      <li>
+        <h3>
+          <a href="/vector%20tiles/2018/05/08/Introduction.html">
+            Introduction
+            <small>08 May 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/vector%20tiles/2018/05/07/PreInstallation.html">
+            Pre-Installation for Vector Tile Workshop
+            <small>07 May 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10.html">
+            Generating Vector Tiles using the Docker Containers for Windows 10 (Pro and Enterprise)
+            <small>06 May 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</section>
+
 </div>
 
     </main>
