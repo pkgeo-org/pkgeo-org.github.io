@@ -270,35 +270,45 @@
 
   <div class="post-body">
     <ol>
-  <li>Download index.html from <a href="url">here</a> and save into new clean directory</li>
-  <li>Copy previously exported Style.json file into same directory location as created from above step 1</li>
-  <li>
-    <p>Open a style editor and edit line 13 and 14
-<code class="highlighter-rouge">"center": [
+  <li>Download <em>index.html</em> from <a href="https://github.com/pkgeo-org/waurisa2018_workshop_data">PKgeo’s GitHub page</a> and save into new clean directory.</li>
+  <li>Copy the previously exported <em>style.json</em> file into the same directory location created in step 1 above.</li>
+  <li>Open <em>style.json</em> in a text editor.
+    <ul>
+      <li>
+        <p>Edit line 13 and 14. Change the coordinates to 47.613 and -122.3988.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"center": [
  47.613,
  -122.3988
-  ],</code> and change to 47.613 and -122.3988</p>
-  </li>
-  <li>
-    <p>Make sure to enter your own <a href="url">Tilehosting</a> Maps API key</p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">"sources": {
+],
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Make sure to enter your own <a href="https://www.tilehosting.com/">Tilehosting</a> Maps API key.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"sources": {
  "openmaptiles": {
-   "type": "vector",
-   "url": "https://free.tilehosting.com/data/v3.json?key=type your API key"
+"type": "vector",
+"url": "https://free.tilehosting.com/data/v3.json?key=type your API key"
  }
   },
   "sprite": "https://openmaptiles.github.io/klokantech-basic-gl-style/sprite",
-  "glyphs": "https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key=type your API key",</code></p>
+  "glyphs": "https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key=type your API key",
+</code></pre></div>        </div>
+      </li>
+    </ul>
   </li>
-  <li>Go to <a href="http://blockbuilder.org/">Bl.ock Builder</a> and Click Start Coding button on top right.</li>
-  <li>Login on top right with your GitHub login.</li>
-  <li>Delete existing code in index.html and copy index.html from step 1</li>
-  <li>Press + button on top far right side to load a new file then name style.json</li>
-  <li>Load the style.json file from step 2</li>
-  <li>Click Save button on top</li>
-  <li>Once saved, click view bl.ock and new tab will open with map view showing Maputnik style</li>
+  <li>Go to <a href="http://blockbuilder.org/">Bl.ock Builder</a>
+    <ul>
+      <li>Click the _Start Coding+ button at the top right.</li>
+      <li>Click <em>login</em> at the top right and login with your GitHub credentials.</li>
+      <li>Delete the existing code in the <em>index.html</em> tab, and copy in the contents of your <em>index.html</em> file from step 1 above.</li>
+      <li>Press the <em>+</em> button at the top far right  to add a new file then name it <em>style.json</em>.</li>
+      <li>Copy in the contents of your <em>style.json</em> file from step 2 above.</li>
+      <li>Click the <em>Save</em> button at the top.</li>
+      <li>Once saved, click <em>view bl.ock</em> and a browser new tab will open with a map view showing your Maputnik style.</li>
+    </ul>
+  </li>
 </ol>
 
     

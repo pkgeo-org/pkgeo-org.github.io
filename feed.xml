@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-12T23:43:28-07:00</updated><id>http://localhost:4000/</id><title type="html">PKgeo</title><subtitle>Blog post and instructions relating to Free Open Source Software For Geospatial (FOSS4G)</subtitle><author><name>Peter Keum</name></author><entry><title type="html">Introduction</title><link href="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2018-05-08T00:00:00-07:00</published><updated>2018-05-09T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/08/Introduction</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html">&lt;p&gt;Hello there. This page is contains materials for Washington URISA 2018 Workshop. This workshop describes and demonstrates various FOSS4G (Free Open Source Software for Geospatial) tools to create &lt;a href=&quot;https://en.wikipedia.org/wiki/Vector_tiles&quot;&gt;&lt;em&gt;vector tiles&lt;/em&gt;&lt;/a&gt;, to stylize vector tiles and to build web-maps.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-17T22:54:52-07:00</updated><id>http://localhost:4000/</id><title type="html">PKgeo</title><subtitle>Blog post and instructions relating to Free Open Source Software For Geospatial (FOSS4G)</subtitle><author><name>Peter Keum</name></author><entry><title type="html">Introduction</title><link href="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2018-05-08T00:00:00-07:00</published><updated>2018-05-09T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/08/Introduction</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html">&lt;p&gt;Hello there. This page is contains materials for Washington URISA 2018 Workshop. This workshop describes and demonstrates various FOSS4G (Free Open Source Software for Geospatial) tools to create &lt;a href=&quot;https://en.wikipedia.org/wiki/Vector_tiles&quot;&gt;&lt;em&gt;vector tiles&lt;/em&gt;&lt;/a&gt;, to stylize vector tiles and to build web-maps.&lt;/p&gt;
 
-&lt;p&gt;We’ll explore FOSS4G workflow to create web-maps from vector tiles. We’ll have presentations with demonstrations which will follow with hands-on exercises. We’ll create vector tiles then style them to create web-maps. In addition, we’ll be exploring &lt;a href=&quot;https://www.mapbox.com/mapbox-studio/&quot;&gt;Mapbox Studio&lt;/a&gt; workflow as well.&lt;/p&gt;
+&lt;p&gt;We’ll explore FOSS4G workflow to create web-maps from vector tiles. We’ll have presentations with demonstrations which we will follow with hands-on exercises. We’ll create vector tiles then style them to create web-maps. In addition, we’ll be exploring &lt;a href=&quot;https://www.mapbox.com/mapbox-studio/&quot;&gt;Mapbox Studio&lt;/a&gt; workflow as well.&lt;/p&gt;
 
 &lt;p&gt;Who are we? We are two FOSS4G enthuists GIS professionals working for King County, Washington.&lt;/p&gt;
 
@@ -497,41 +497,83 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
     &lt;p&gt;Test that the vector tiles are being served by entering &lt;a href=&quot;http://192.168.99.100:8080&quot;&gt;http://192.168.99.100:8080/&lt;/a&gt; into your browser’s address bar&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;After testing, hit &lt;strong&gt;ctl-C&lt;/strong&gt; to quit TileServer GL&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Home Edition.</summary></entry><entry><title type="html">Installing and Using Maputnik, vector tile style editor.</title><link href="http://localhost:4000/vector%20tiles/2018/04/30/Maputnik.html" rel="alternate" type="text/html" title="Installing and Using Maputnik, vector tile style editor. " /><published>2018-04-30T00:00:00-07:00</published><updated>2018-05-09T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/30/Maputnik</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/30/Maputnik.html">&lt;h2 id=&quot;1-maputnik-starting-guide&quot;&gt;1. Maputnik Starting Guide&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Home Edition.</summary></entry><entry><title type="html">Installing and Using Maputnik, Vector Tile Style Editor.</title><link href="http://localhost:4000/vector%20tiles/2018/04/30/Maputnik.html" rel="alternate" type="text/html" title="Installing and Using Maputnik, Vector Tile Style Editor. " /><published>2018-04-30T00:00:00-07:00</published><updated>2018-05-17T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/30/Maputnik</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/30/Maputnik.html">&lt;h2 id=&quot;what-is-maputnik&quot;&gt;What is Maputnik?&lt;/h2&gt;
+&lt;p&gt;Maputnik is a vector tile visual style editor that is easy to use, free and open source. It is a style editor with immediate feedback to create Mapbox GL styles using the &lt;a href=&quot;https://www.mapbox.com/mapbox-gl-js/style-spec/&quot;&gt;Mapbox GL style specification&lt;/a&gt;. Maptunik does not require a cloud based deployment and will run on your local machine.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;What is Maputnik?&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Maputnik is a vector tile visual style editor that is easy to use, free and open source. It is style editor with immediate feedback to create Mapbox GL styles using &lt;a href=&quot;https://www.mapbox.com/mapbox-gl-js/style-spec/&quot;&gt;Mapbox GL style specification&lt;/a&gt;. Maptunik project is free and open source tool that does not require a cloud based deployment and will run on your local machine.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;installing-maputnick&quot;&gt;Installing Maputnick&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Download the latest Maputnik release from &lt;a href=&quot;https://github.com/maputnik/editor/releases/&quot;&gt;here&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;Under &lt;em&gt;Assets&lt;/em&gt;, click on and download &lt;em&gt;public.zip&lt;/em&gt; to your local drive.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Move the unzipped contents of &lt;em&gt;public.zip&lt;/em&gt;  into a directory (i.e $Home/Document/Maputnik/public).&lt;/li&gt;
+  &lt;li&gt;Open your terminal window, and be sure you are in the directory with those contents.&lt;/li&gt;
+  &lt;li&gt;Run your web-server to start the Maputnik style editor: &lt;code class=&quot;highlighter-rouge&quot;&gt;http-server -p 8000&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h2 id=&quot;2-download-the-maputnik-from-here-by-scrolling-to-the-bottom-of-the-page&quot;&gt;2. Download the Maputnik from &lt;a href=&quot;https://github.com/maputnik/editor/releases/tag/v1.0.2&quot;&gt;Here&lt;/a&gt; by scrolling to the bottom of the page.&lt;/h2&gt;</content><author><name>Peter Keum</name></author><summary type="html">1. Maputnik Starting Guide</summary></entry><entry><title type="html">Creating Simple Web Map from vector tiles</title><link href="http://localhost:4000/vector%20tiles/2018/04/29/WebMap.html" rel="alternate" type="text/html" title="Creating Simple Web Map from vector tiles " /><published>2018-04-29T00:00:00-07:00</published><updated>2018-05-08T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/29/WebMap</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/29/WebMap.html">&lt;ol&gt;
-  &lt;li&gt;Download index.html from &lt;a href=&quot;url&quot;&gt;here&lt;/a&gt; and save into new clean directory&lt;/li&gt;
-  &lt;li&gt;Copy previously exported Style.json file into same directory location as created from above step 1&lt;/li&gt;
+&lt;h2 id=&quot;using-maputnik&quot;&gt;Using Maputnik&lt;/h2&gt;
+&lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Open a style editor and edit line 13 and 14
-&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;center&quot;: [
+    &lt;p&gt;Go open a browser and enter &lt;a href=&quot;localhost:8000&quot;&gt;localhost:8000&lt;/a&gt; to start styling vector tiles with Maputnik.
+ &lt;img src=&quot;/assets/images/maputnik-start1.png&quot; alt=&quot;screen shot&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select a basemap style to choose from &lt;em&gt;Gallery Styles&lt;/em&gt;
+&lt;img src=&quot;/assets/images/maputnik-gallerystyle.png&quot; alt=&quot;screen shot&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Start Tileserver-gl to serve the previously generated vector tiles.&lt;/li&gt;
+  &lt;li&gt;Load the King County Block Group vector tiles.&lt;/li&gt;
+  &lt;li&gt;Load the data by clicking on &lt;em&gt;Sources&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Hint:&lt;/strong&gt; To delete any source, one must remove it from layer list first.
+&lt;img src=&quot;/assets/images/Maputnik-AddSource.png&quot; alt=&quot;screen shot&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Source ID&lt;/em&gt;: Give a name asosociate with the data&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Source Type&lt;/em&gt;: Select GeoJSON or Vector (TileJSON URL)&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;TIleJSON URL&lt;/em&gt;: Copy url of locally hosted vector tile
+&lt;img src=&quot;/assets/images/Maputnik-AddLayer.png&quot; alt=&quot;screen shot&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Export Style JSON file locally.  This includes references to the basemap, and your own styled vector tiles.
+&lt;img src=&quot;/assets/images/maptunik-export.png&quot; alt=&quot;screen shot&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Peter Keum</name></author><summary type="html">What is Maputnik? Maputnik is a vector tile visual style editor that is easy to use, free and open source. It is a style editor with immediate feedback to create Mapbox GL styles using the Mapbox GL style specification. Maptunik does not require a cloud based deployment and will run on your local machine.</summary></entry><entry><title type="html">Creating Simple Web Map from vector tiles</title><link href="http://localhost:4000/vector%20tiles/2018/04/29/WebMap.html" rel="alternate" type="text/html" title="Creating Simple Web Map from vector tiles " /><published>2018-04-29T00:00:00-07:00</published><updated>2018-05-17T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/29/WebMap</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/29/WebMap.html">&lt;ol&gt;
+  &lt;li&gt;Download &lt;em&gt;index.html&lt;/em&gt; from &lt;a href=&quot;https://github.com/pkgeo-org/waurisa2018_workshop_data&quot;&gt;PKgeo’s GitHub page&lt;/a&gt; and save into new clean directory.&lt;/li&gt;
+  &lt;li&gt;Copy the previously exported &lt;em&gt;style.json&lt;/em&gt; file into the same directory location created in step 1 above.&lt;/li&gt;
+  &lt;li&gt;Open &lt;em&gt;style.json&lt;/em&gt; in a text editor.
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Edit line 13 and 14. Change the coordinates to 47.613 and -122.3988.&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;center&quot;: [
  47.613,
  -122.3988
-  ],&lt;/code&gt; and change to 47.613 and -122.3988&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Make sure to enter your own &lt;a href=&quot;url&quot;&gt;Tilehosting&lt;/a&gt; Maps API key&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;sources&quot;: {
+],
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Make sure to enter your own &lt;a href=&quot;https://www.tilehosting.com/&quot;&gt;Tilehosting&lt;/a&gt; Maps API key.&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;sources&quot;: {
  &quot;openmaptiles&quot;: {
-   &quot;type&quot;: &quot;vector&quot;,
-   &quot;url&quot;: &quot;https://free.tilehosting.com/data/v3.json?key=type your API key&quot;
+&quot;type&quot;: &quot;vector&quot;,
+&quot;url&quot;: &quot;https://free.tilehosting.com/data/v3.json?key=type your API key&quot;
  }
   },
   &quot;sprite&quot;: &quot;https://openmaptiles.github.io/klokantech-basic-gl-style/sprite&quot;,
-  &quot;glyphs&quot;: &quot;https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key=type your API key&quot;,&lt;/code&gt;&lt;/p&gt;
+  &quot;glyphs&quot;: &quot;https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key=type your API key&quot;,
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Go to &lt;a href=&quot;http://blockbuilder.org/&quot;&gt;Bl.ock Builder&lt;/a&gt; and Click Start Coding button on top right.&lt;/li&gt;
-  &lt;li&gt;Login on top right with your GitHub login.&lt;/li&gt;
-  &lt;li&gt;Delete existing code in index.html and copy index.html from step 1&lt;/li&gt;
-  &lt;li&gt;Press + button on top far right side to load a new file then name style.json&lt;/li&gt;
-  &lt;li&gt;Load the style.json file from step 2&lt;/li&gt;
-  &lt;li&gt;Click Save button on top&lt;/li&gt;
-  &lt;li&gt;Once saved, click view bl.ock and new tab will open with map view showing Maputnik style&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Peter Keum</name></author><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html">Download index.html from here and save into new clean directory Copy previously exported Style.json file into same directory location as created from above step 1 Open a style editor and edit line 13 and 14 &quot;center&quot;: [ 47.613, -122.3988 ], and change to 47.613 and -122.3988</summary></entry></feed>
+  &lt;li&gt;Go to &lt;a href=&quot;http://blockbuilder.org/&quot;&gt;Bl.ock Builder&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Click the _Start Coding+ button at the top right.&lt;/li&gt;
+      &lt;li&gt;Click &lt;em&gt;login&lt;/em&gt; at the top right and login with your GitHub credentials.&lt;/li&gt;
+      &lt;li&gt;Delete the existing code in the &lt;em&gt;index.html&lt;/em&gt; tab, and copy in the contents of your &lt;em&gt;index.html&lt;/em&gt; file from step 1 above.&lt;/li&gt;
+      &lt;li&gt;Press the &lt;em&gt;+&lt;/em&gt; button at the top far right  to add a new file then name it &lt;em&gt;style.json&lt;/em&gt;.&lt;/li&gt;
+      &lt;li&gt;Copy in the contents of your &lt;em&gt;style.json&lt;/em&gt; file from step 2 above.&lt;/li&gt;
+      &lt;li&gt;Click the &lt;em&gt;Save&lt;/em&gt; button at the top.&lt;/li&gt;
+      &lt;li&gt;Once saved, click &lt;em&gt;view bl.ock&lt;/em&gt; and a browser new tab will open with a map view showing your Maputnik style.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Peter Keum</name></author><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html">Download index.html from PKgeo’s GitHub page and save into new clean directory. Copy the previously exported style.json file into the same directory location created in step 1 above. Open style.json in a text editor. Edit line 13 and 14. Change the coordinates to 47.613 and -122.3988.</summary></entry></feed>

@@ -11,7 +11,7 @@
 
   <title>
     
-      Installing and Using Maputnik, vector tile style editor.  &middot; PKgeo
+      Installing and Using Maputnik, Vector Tile Style Editor.  &middot; PKgeo
     
   </title>
 
@@ -246,7 +246,7 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Installing and Using Maputnik, vector tile style editor. </h1>
+  <h1 class="post-title">Installing and Using Maputnik, Vector Tile Style Editor. </h1>
 </header>
 <div class="content">
   <div class="post-meta">
@@ -269,14 +269,46 @@
 </div>
 
   <div class="post-body">
-    <h2 id="1-maputnik-starting-guide">1. Maputnik Starting Guide</h2>
+    <h2 id="what-is-maputnik">What is Maputnik?</h2>
+<p>Maputnik is a vector tile visual style editor that is easy to use, free and open source. It is a style editor with immediate feedback to create Mapbox GL styles using the <a href="https://www.mapbox.com/mapbox-gl-js/style-spec/">Mapbox GL style specification</a>. Maptunik does not require a cloud based deployment and will run on your local machine.</p>
 
-<p><strong>What is Maputnik?</strong></p>
-<ul>
-  <li>Maputnik is a vector tile visual style editor that is easy to use, free and open source. It is style editor with immediate feedback to create Mapbox GL styles using <a href="https://www.mapbox.com/mapbox-gl-js/style-spec/">Mapbox GL style specification</a>. Maptunik project is free and open source tool that does not require a cloud based deployment and will run on your local machine.</li>
-</ul>
+<h2 id="installing-maputnick">Installing Maputnick</h2>
+<ol>
+  <li>Download the latest Maputnik release from <a href="https://github.com/maputnik/editor/releases/">here</a>.
+    <ul>
+      <li>Under <em>Assets</em>, click on and download <em>public.zip</em> to your local drive.</li>
+    </ul>
+  </li>
+  <li>Move the unzipped contents of <em>public.zip</em>  into a directory (i.e $Home/Document/Maputnik/public).</li>
+  <li>Open your terminal window, and be sure you are in the directory with those contents.</li>
+  <li>Run your web-server to start the Maputnik style editor: <code class="highlighter-rouge">http-server -p 8000</code></li>
+</ol>
 
-<h2 id="2-download-the-maputnik-from-here-by-scrolling-to-the-bottom-of-the-page">2. Download the Maputnik from <a href="https://github.com/maputnik/editor/releases/tag/v1.0.2">Here</a> by scrolling to the bottom of the page.</h2>
+<h2 id="using-maputnik">Using Maputnik</h2>
+<ol>
+  <li>
+    <p>Go open a browser and enter <a href="localhost:8000">localhost:8000</a> to start styling vector tiles with Maputnik.
+ <img src="/assets/images/maputnik-start1.png" alt="screen shot" /></p>
+  </li>
+  <li>
+    <p>Select a basemap style to choose from <em>Gallery Styles</em>
+<img src="/assets/images/maputnik-gallerystyle.png" alt="screen shot" /></p>
+  </li>
+  <li>Start Tileserver-gl to serve the previously generated vector tiles.</li>
+  <li>Load the King County Block Group vector tiles.</li>
+  <li>Load the data by clicking on <em>Sources</em>
+    <ul>
+      <li><strong>Hint:</strong> To delete any source, one must remove it from layer list first.
+<img src="/assets/images/Maputnik-AddSource.png" alt="screen shot" /></li>
+      <li><em>Source ID</em>: Give a name asosociate with the data</li>
+      <li><em>Source Type</em>: Select GeoJSON or Vector (TileJSON URL)</li>
+      <li><em>TIleJSON URL</em>: Copy url of locally hosted vector tile
+<img src="/assets/images/Maputnik-AddLayer.png" alt="screen shot" /></li>
+    </ul>
+  </li>
+  <li>Export Style JSON file locally.  This includes references to the basemap, and your own styled vector tiles.
+<img src="/assets/images/maptunik-export.png" alt="screen shot" /></li>
+</ol>
 
     
 
