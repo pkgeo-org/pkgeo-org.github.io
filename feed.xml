@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-17T22:54:52-07:00</updated><id>http://localhost:4000/</id><title type="html">PKgeo</title><subtitle>Blog post and instructions relating to Free Open Source Software For Geospatial (FOSS4G)</subtitle><author><name>Peter Keum</name></author><entry><title type="html">Introduction</title><link href="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2018-05-08T00:00:00-07:00</published><updated>2018-05-09T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/08/Introduction</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html">&lt;p&gt;Hello there. This page is contains materials for Washington URISA 2018 Workshop. This workshop describes and demonstrates various FOSS4G (Free Open Source Software for Geospatial) tools to create &lt;a href=&quot;https://en.wikipedia.org/wiki/Vector_tiles&quot;&gt;&lt;em&gt;vector tiles&lt;/em&gt;&lt;/a&gt;, to stylize vector tiles and to build web-maps.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-18T18:13:09-07:00</updated><id>http://localhost:4000/</id><title type="html">PKgeo</title><subtitle>Blog post and instructions relating to Free Open Source Software For Geospatial (FOSS4G)</subtitle><author><name>Peter Keum</name></author><entry><title type="html">Introduction</title><link href="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2018-05-08T00:00:00-07:00</published><updated>2018-05-09T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/08/Introduction</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html">&lt;p&gt;Hello there. This page is contains materials for Washington URISA 2018 Workshop. This workshop describes and demonstrates various FOSS4G (Free Open Source Software for Geospatial) tools to create &lt;a href=&quot;https://en.wikipedia.org/wiki/Vector_tiles&quot;&gt;&lt;em&gt;vector tiles&lt;/em&gt;&lt;/a&gt;, to stylize vector tiles and to build web-maps.&lt;/p&gt;
 
 &lt;p&gt;We’ll explore FOSS4G workflow to create web-maps from vector tiles. We’ll have presentations with demonstrations which we will follow with hands-on exercises. We’ll create vector tiles then style them to create web-maps. In addition, we’ll be exploring &lt;a href=&quot;https://www.mapbox.com/mapbox-studio/&quot;&gt;Mapbox Studio&lt;/a&gt; workflow as well.&lt;/p&gt;
 
@@ -356,7 +356,7 @@
 &lt;ul&gt;
   &lt;li&gt;Double-click the  Quick Start Terminal installed by Docker Toolbox
     &lt;ul&gt;
-      &lt;li&gt;You will execute all the docker commands in the steps below at the &lt;em&gt;Quick Start Terminal&lt;/em&gt; prompt&lt;/li&gt;
+      &lt;li&gt;You will execute all the docker commands in the steps below at the &lt;em&gt;Docker Quickstart Terminal&lt;/em&gt; prompt&lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;For help getting started, check out the docs at https://docs.docker.com&lt;/p&gt;
 
@@ -398,7 +398,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
       &lt;li&gt;“mccombsp” will be replaced with your local user name&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Unzip zip file&lt;/li&gt;
+  &lt;li&gt;Unzip zip file. Be sure that the files are in your local user directory, not in a subdirectory.&lt;/li&gt;
   &lt;li&gt;Use OGR tools at the Quick Start Terminal prompt
     &lt;ul&gt;
       &lt;li&gt;
@@ -410,10 +410,6 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
         &lt;p&gt;&lt;em&gt;ogr2ogr&lt;/em&gt;: convert shape file to GeoJSON file&lt;/p&gt;
 
         &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it --rm -v $HOME:/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON KingCo_2000_Census_BlockGroups.geojson KingCo_2000_Census_BlockGroups.shp -Progress&lt;/code&gt;&lt;/p&gt;
-
-        &lt;p&gt;&lt;strong&gt;If the above command doesn’t work, adapt Roger’s command bellow but with the data right in the $HOME directory&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v $HOME/tippecanoe:/home/tippecanoe klokantech/gdal ogr2ogr /home/tippecanoe/Census_block.geojson -t_srs EPSG:4326 -f GeoJSON  /home/tippecanoe/Census_2000_Block_Groups__blkgrp00_area.shp -Progress&lt;/code&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -446,11 +442,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
   &lt;li&gt;
     &lt;p&gt;Start Tippecanoe container in interactive mode at the Quick Start Terminal prompt&lt;/p&gt;
 
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v $HOME:/tippecanoe jskeates/tippecanoe:latest&lt;/code&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;strong&gt;If the above command doesn’t work, adapt Roger’s command bellow but with the data right in the $HOME directory&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest&quot; in Docker Quickstart terminal&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v $HOME:/home/tippecanoe jskeates/tippecanoe:latest&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;You will see your command prompt change to look like &lt;code class=&quot;highlighter-rouge&quot;&gt;bash-4.3$&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;
@@ -463,9 +455,9 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
 
     &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exit&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;The vector tiles will be in a new folder: $HOME/tippecanoe/KingCo_2000_Census_BlockGroups.mbtiles
+  &lt;li&gt;The vector tiles will be $HOME/KingCo_2000_Census_BlockGroups.mbtiles
     &lt;ul&gt;
-      &lt;li&gt;$HOME is replaced with your user directory at a unix style command promt.&lt;/li&gt;
+      &lt;li&gt;$HOME represents your user directory at a unix style command promt.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -486,7 +478,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
 &lt;ul&gt;
   &lt;li&gt;Ensure Docker is running on your computer&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;From the command line change into the directory where you have placed your mbtiles file&lt;/p&gt;
+    &lt;p&gt;From the command line change into the directory &lt;code class=&quot;highlighter-rouge&quot;&gt;cd $HOME&lt;/code&gt; where you have placed your mbtiles file&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Start the TileServer GL container from the Quick Start Terminal prompt&lt;/p&gt;
@@ -545,8 +537,8 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
         &lt;p&gt;Edit line 13 and 14. Change the coordinates to 47.613 and -122.3988.&lt;/p&gt;
 
         &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;center&quot;: [
- 47.613,
- -122.3988
+47.613,
+-122.3988
 ],
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;

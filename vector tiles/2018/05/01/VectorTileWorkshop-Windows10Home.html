@@ -288,7 +288,7 @@
 <ul>
   <li>Double-click the  Quick Start Terminal installed by Docker Toolbox
     <ul>
-      <li>You will execute all the docker commands in the steps below at the <em>Quick Start Terminal</em> prompt</li>
+      <li>You will execute all the docker commands in the steps below at the <em>Docker Quickstart Terminal</em> prompt</li>
       <li>
         <p>For help getting started, check out the docs at https://docs.docker.com</p>
 
@@ -330,7 +330,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
       <li>“mccombsp” will be replaced with your local user name</li>
     </ul>
   </li>
-  <li>Unzip zip file</li>
+  <li>Unzip zip file. Be sure that the files are in your local user directory, not in a subdirectory.</li>
   <li>Use OGR tools at the Quick Start Terminal prompt
     <ul>
       <li>
@@ -342,10 +342,6 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
         <p><em>ogr2ogr</em>: convert shape file to GeoJSON file</p>
 
         <p><code class="highlighter-rouge">docker run -it --rm -v $HOME:/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON KingCo_2000_Census_BlockGroups.geojson KingCo_2000_Census_BlockGroups.shp -Progress</code></p>
-
-        <p><strong>If the above command doesn’t work, adapt Roger’s command bellow but with the data right in the $HOME directory</strong></p>
-
-        <p><code class="highlighter-rouge">docker run -it -v $HOME/tippecanoe:/home/tippecanoe klokantech/gdal ogr2ogr /home/tippecanoe/Census_block.geojson -t_srs EPSG:4326 -f GeoJSON  /home/tippecanoe/Census_2000_Block_Groups__blkgrp00_area.shp -Progress</code></p>
       </li>
     </ul>
   </li>
@@ -378,11 +374,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
   <li>
     <p>Start Tippecanoe container in interactive mode at the Quick Start Terminal prompt</p>
 
-    <p><code class="highlighter-rouge">docker run -it -v $HOME:/tippecanoe jskeates/tippecanoe:latest</code></p>
-
-    <p><strong>If the above command doesn’t work, adapt Roger’s command bellow but with the data right in the $HOME directory</strong></p>
-
-    <p><code class="highlighter-rouge">docker run -it -v $HOME/tippecanoe:/home/tippecanoe jskeates/tippecanoe:latest" in Docker Quickstart terminal</code></p>
+    <p><code class="highlighter-rouge">docker run -it -v $HOME:/home/tippecanoe jskeates/tippecanoe:latest</code></p>
   </li>
   <li>You will see your command prompt change to look like <code class="highlighter-rouge">bash-4.3$</code></li>
   <li>
@@ -395,9 +387,9 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
 
     <p><code class="highlighter-rouge">exit</code></p>
   </li>
-  <li>The vector tiles will be in a new folder: $HOME/tippecanoe/KingCo_2000_Census_BlockGroups.mbtiles
+  <li>The vector tiles will be $HOME/KingCo_2000_Census_BlockGroups.mbtiles
     <ul>
-      <li>$HOME is replaced with your user directory at a unix style command promt.</li>
+      <li>$HOME represents your user directory at a unix style command promt.</li>
     </ul>
   </li>
 </ul>
@@ -418,7 +410,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
 <ul>
   <li>Ensure Docker is running on your computer</li>
   <li>
-    <p>From the command line change into the directory where you have placed your mbtiles file</p>
+    <p>From the command line change into the directory <code class="highlighter-rouge">cd $HOME</code> where you have placed your mbtiles file</p>
   </li>
   <li>
     <p>Start the TileServer GL container from the Quick Start Terminal prompt</p>
