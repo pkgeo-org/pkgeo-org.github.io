@@ -105,10 +105,6 @@
   
 
   
-    
-  
-
-  
 
   
     
@@ -134,13 +130,6 @@
     
   
 
-  
-
-  
-    
-      <a class="category-link "
-          href="/category/markup.html">Resources</a>
-    
   
 
   
@@ -278,7 +267,7 @@
 <ul>
   <li><strong>Requires Windows 10 Pro  or Enterprise</strong></li>
   <li><a href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/">Hyper-V</a> provides hardware virtualization support in Windows</li>
-  <li>Open a PowerShell terminal window as Adminstrator</li>
+  <li>Open a PowerShell terminal window as Administrator</li>
   <li>
     <p>To enable Hyper-V temporarily, enter the following command at the Power Shell prompt</p>
 
@@ -293,8 +282,9 @@
   <li>Download <a href="https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows">Docker Community Edition for Windows</a></li>
   <li>Double Click the Docker for Windows Installer.exe file
     <ul>
-      <li>Follow the instructions</li>
-      <li>You will be asked to provide your password durring installation</li>
+      <li>Follow the instructions and accept default settings</li>
+      <li>You may be asked to provide your password during installation</li>
+      <li>You may be asked to restart your computer to complete the installation. If your computer restarts, you will need to reenable Hyper-V as explained in step 1 above.</li>
     </ul>
   </li>
   <li>Start Docker for Windows from the Start Menu</li>
@@ -306,7 +296,7 @@
       <li>Click <em>OK</em> and you will be prompted for credentials with admin privileges</li>
     </ul>
   </li>
-  <li>Check that all needed users are in the local docker-users group for your machine</li>
+  <li>If Docker was installed with an admin account different from your user account, you will need to check that your user is in the local docker-users group for your machine</li>
 </ul>
 
 <h2 id="3-install-a-gdalogr-tools-container">3. Install a GDAL/OGR tools container</h2>
@@ -316,7 +306,7 @@
   <li>Search for gdal</li>
   <li>Select <a href="https://hub.docker.com/r/klokantech/gdal/">klokantech/gdal</a></li>
   <li>
-    <p>Copy the Docker Pull Command &amp; run it at PoweShell prompt</p>
+    <p>Copy the Docker Pull Command &amp; run it at PowerShell prompt</p>
 
     <p><code class="highlighter-rouge">docker pull klokantech/gdal</code></p>
   </li>
@@ -351,7 +341,7 @@
 <ul>
   <li>You can download the following GeoJSON file for next step if needed
     <ul>
-      <li><a href="https://drive.google.com/file/d/1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg/view?usp=sharing">King County 2000 Census Block Groups GeoJSON</a></li>
+      <li><a href="https://drive.google.com/open?id=1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg">King County 2000 Census Block Groups GeoJSON</a></li>
     </ul>
   </li>
 </ul>
@@ -374,7 +364,7 @@
   <li>
     <p>Start Tippecanoe container in interactive mode at the PowerShell prompt</p>
 
-    <p><code class="highlighter-rouge">docker run -it -v c:\users\keump:/tippecanoe jskeates/tippecanoe:latest</code></p>
+    <p><code class="highlighter-rouge">docker run -it -v c:\users\keump:/home/tippecanoe jskeates/tippecanoe:latest</code></p>
   </li>
   <li>You will see your command prompt change to look like <code class="highlighter-rouge">bash-4.3$</code></li>
   <li>
@@ -387,9 +377,9 @@
 
     <p><code class="highlighter-rouge">exit</code></p>
   </li>
-  <li>The vector tiles will be in a new folder: $HOME/tippecanoe/KingCo_2000_Census_BlockGroups.mbtiles
+  <li>The vector tiles will be $HOME/KingCo_2000_Census_BlockGroups.mbtiles
     <ul>
-      <li>$HOME is replaced with your user directory at a unix style command promt.</li>
+      <li>$HOME represents your user directory at a unix style command prompt.</li>
     </ul>
   </li>
 </ul>
@@ -406,7 +396,7 @@
   </li>
 </ul>
 
-<h2 id="9-run-tileserver-gl">9. Run TileServer GL</h2>
+<h2 id="9-run-tileserver-gl-">9. Run TileServer GL <a name="starttileserver"></a></h2>
 <ul>
   <li>Ensure Docker is running on your computer</li>
   <li>
@@ -417,6 +407,7 @@
 
     <p><code class="highlighter-rouge">docker run --rm -it -v C:\users\keump:/data -p 8080:80 klokantech/tileserver-gl</code></p>
   </li>
+  <li>Windows may prompt you to create a firewall exception, depending on your security settings. If asked, agree to the exception</li>
   <li>
     <p>Test that the vector tiles are being served by entering <a href="http://localhost:8080">http://localhost:8080/</a> into your browser’s address bar</p>
   </li>
@@ -476,7 +467,7 @@
       <li>
         <h3>
           <a href="/vector%20tiles/2018/05/05/VectorTileWorkshop-MacOS.html">
-            Generating Vector Tiles using the Docker Containers for Mac OS
+            Generating Vector Tiles using the Docker Containers for macOS
             <small>05 May 2018</small>
           </a>
         </h3>

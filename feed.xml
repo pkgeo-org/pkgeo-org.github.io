@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-18T18:13:09-07:00</updated><id>http://localhost:4000/</id><title type="html">PKgeo</title><subtitle>Blog post and instructions relating to Free Open Source Software For Geospatial (FOSS4G)</subtitle><author><name>Peter Keum</name></author><entry><title type="html">Introduction</title><link href="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2018-05-08T00:00:00-07:00</published><updated>2018-05-09T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/08/Introduction</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html">&lt;p&gt;Hello there. This page is contains materials for Washington URISA 2018 Workshop. This workshop describes and demonstrates various FOSS4G (Free Open Source Software for Geospatial) tools to create &lt;a href=&quot;https://en.wikipedia.org/wiki/Vector_tiles&quot;&gt;&lt;em&gt;vector tiles&lt;/em&gt;&lt;/a&gt;, to stylize vector tiles and to build web-maps.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-19T13:24:37-07:00</updated><id>http://localhost:4000/</id><title type="html">PKgeo</title><subtitle>Blog post and instructions relating to Free Open Source Software For Geospatial (FOSS4G)</subtitle><author><name>Peter Keum</name></author><entry><title type="html">Introduction</title><link href="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2018-05-08T00:00:00-07:00</published><updated>2018-05-19T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/08/Introduction</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/08/Introduction.html">&lt;p&gt;Hello there. This page is contains materials for Washington URISA 2018 Workshop. This workshop describes and demonstrates various FOSS4G (Free Open Source Software for Geospatial) tools to create &lt;a href=&quot;https://en.wikipedia.org/wiki/Vector_tiles&quot;&gt;&lt;em&gt;vector tiles&lt;/em&gt;&lt;/a&gt;, to stylize vector tiles and to build web-maps.&lt;/p&gt;
 
 &lt;p&gt;We’ll explore FOSS4G workflow to create web-maps from vector tiles. We’ll have presentations with demonstrations which we will follow with hands-on exercises. We’ll create vector tiles then style them to create web-maps. In addition, we’ll be exploring &lt;a href=&quot;https://www.mapbox.com/mapbox-studio/&quot;&gt;Mapbox Studio&lt;/a&gt; workflow as well.&lt;/p&gt;
 
-&lt;p&gt;Who are we? We are two FOSS4G enthuists GIS professionals working for King County, Washington.&lt;/p&gt;
+&lt;p&gt;Who are we? We are two FOSS4G enthusiasts GIS professionals working for King County, Washington.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://pkgeo.com/&quot;&gt;Peter Keum&lt;/a&gt;, GISP. GIS Specialist with King County Wastewater Treatment Division/KC GIS Center.
 &lt;a href=&quot;https://www.linkedin.com/in/pkgeo/&quot;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;
@@ -70,7 +70,7 @@
       &lt;li&gt;Execute the steps at the Quick Start Terminal&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">Please bring your laptop with the following items pre-installed. Instructions are found below. Please feel free to contact us for any questions or issues with following the installation instructions.</summary></entry><entry><title type="html">Generating Vector Tiles using the Docker Containers for Windows 10 (Pro and Enterprise)</title><link href="http://localhost:4000/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10.html" rel="alternate" type="text/html" title="Generating Vector Tiles using the Docker Containers for Windows 10 (Pro and Enterprise)" /><published>2018-05-06T00:00:00-07:00</published><updated>2018-05-12T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10.html">&lt;p&gt;In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Pro or Enterprise Edition.
+&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">Please bring your laptop with the following items pre-installed. Instructions are found below. Please feel free to contact us for any questions or issues with following the installation instructions.</summary></entry><entry><title type="html">Generating Vector Tiles using the Docker Containers for Windows 10 (Pro and Enterprise)</title><link href="http://localhost:4000/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10.html" rel="alternate" type="text/html" title="Generating Vector Tiles using the Docker Containers for Windows 10 (Pro and Enterprise)" /><published>2018-05-06T00:00:00-07:00</published><updated>2018-05-19T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10.html">&lt;p&gt;In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Pro or Enterprise Edition.
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;If you are running Windows 10 Home please use the &lt;a href=&quot;/vector%20tiles/2018/05/01/VectorTileWorkshop-Windows10Home.html&quot;&gt;Windows 10 Home instructions&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -79,7 +79,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Requires Windows 10 Pro  or Enterprise&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/&quot;&gt;Hyper-V&lt;/a&gt; provides hardware virtualization support in Windows&lt;/li&gt;
-  &lt;li&gt;Open a PowerShell terminal window as Adminstrator&lt;/li&gt;
+  &lt;li&gt;Open a PowerShell terminal window as Administrator&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;To enable Hyper-V temporarily, enter the following command at the Power Shell prompt&lt;/p&gt;
 
@@ -94,8 +94,9 @@
   &lt;li&gt;Download &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows&quot;&gt;Docker Community Edition for Windows&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Double Click the Docker for Windows Installer.exe file
     &lt;ul&gt;
-      &lt;li&gt;Follow the instructions&lt;/li&gt;
-      &lt;li&gt;You will be asked to provide your password durring installation&lt;/li&gt;
+      &lt;li&gt;Follow the instructions and accept default settings&lt;/li&gt;
+      &lt;li&gt;You may be asked to provide your password during installation&lt;/li&gt;
+      &lt;li&gt;You may be asked to restart your computer to complete the installation. If your computer restarts, you will need to reenable Hyper-V as explained in step 1 above.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Start Docker for Windows from the Start Menu&lt;/li&gt;
@@ -107,7 +108,7 @@
       &lt;li&gt;Click &lt;em&gt;OK&lt;/em&gt; and you will be prompted for credentials with admin privileges&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Check that all needed users are in the local docker-users group for your machine&lt;/li&gt;
+  &lt;li&gt;If Docker was installed with an admin account different from your user account, you will need to check that your user is in the local docker-users group for your machine&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;3-install-a-gdalogr-tools-container&quot;&gt;3. Install a GDAL/OGR tools container&lt;/h2&gt;
@@ -117,7 +118,7 @@
   &lt;li&gt;Search for gdal&lt;/li&gt;
   &lt;li&gt;Select &lt;a href=&quot;https://hub.docker.com/r/klokantech/gdal/&quot;&gt;klokantech/gdal&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Copy the Docker Pull Command &amp;amp; run it at PoweShell prompt&lt;/p&gt;
+    &lt;p&gt;Copy the Docker Pull Command &amp;amp; run it at PowerShell prompt&lt;/p&gt;
 
     &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker pull klokantech/gdal&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -152,7 +153,7 @@
 &lt;ul&gt;
   &lt;li&gt;You can download the following GeoJSON file for next step if needed
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://drive.google.com/file/d/1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg/view?usp=sharing&quot;&gt;King County 2000 Census Block Groups GeoJSON&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://drive.google.com/open?id=1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg&quot;&gt;King County 2000 Census Block Groups GeoJSON&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -175,7 +176,7 @@
   &lt;li&gt;
     &lt;p&gt;Start Tippecanoe container in interactive mode at the PowerShell prompt&lt;/p&gt;
 
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v c:\users\keump:/tippecanoe jskeates/tippecanoe:latest&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v c:\users\keump:/home/tippecanoe jskeates/tippecanoe:latest&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;You will see your command prompt change to look like &lt;code class=&quot;highlighter-rouge&quot;&gt;bash-4.3$&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;
@@ -188,9 +189,9 @@
 
     &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exit&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;The vector tiles will be in a new folder: $HOME/tippecanoe/KingCo_2000_Census_BlockGroups.mbtiles
+  &lt;li&gt;The vector tiles will be $HOME/KingCo_2000_Census_BlockGroups.mbtiles
     &lt;ul&gt;
-      &lt;li&gt;$HOME is replaced with your user directory at a unix style command promt.&lt;/li&gt;
+      &lt;li&gt;$HOME represents your user directory at a unix style command prompt.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -207,7 +208,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;9-run-tileserver-gl&quot;&gt;9. Run TileServer GL&lt;/h2&gt;
+&lt;h2 id=&quot;9-run-tileserver-gl-&quot;&gt;9. Run TileServer GL &lt;a name=&quot;starttileserver&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Ensure Docker is running on your computer&lt;/li&gt;
   &lt;li&gt;
@@ -218,14 +219,15 @@
 
     &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run --rm -it -v C:\users\keump:/data -p 8080:80 klokantech/tileserver-gl&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
+  &lt;li&gt;Windows may prompt you to create a firewall exception, depending on your security settings. If asked, agree to the exception&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Test that the vector tiles are being served by entering &lt;a href=&quot;http://localhost:8080&quot;&gt;http://localhost:8080/&lt;/a&gt; into your browser’s address bar&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;After testing, hit &lt;strong&gt;ctl-C&lt;/strong&gt; to quit TileServer GL&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Pro or Enterprise Edition.</summary></entry><entry><title type="html">Generating Vector Tiles using the Docker Containers for Mac OS</title><link href="http://localhost:4000/vector%20tiles/2018/05/05/VectorTileWorkshop-MacOS.html" rel="alternate" type="text/html" title="Generating Vector Tiles using the Docker Containers for Mac OS" /><published>2018-05-05T00:00:00-07:00</published><updated>2018-05-12T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/05/VectorTileWorkshop-MacOS</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/05/VectorTileWorkshop-MacOS.html">&lt;p&gt;In this lesson we will learn to use Docker containers to create and serve vector tiles on your Macintosh laptop.
+&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Pro or Enterprise Edition.</summary></entry><entry><title type="html">Generating Vector Tiles using the Docker Containers for macOS</title><link href="http://localhost:4000/vector%20tiles/2018/05/05/VectorTileWorkshop-MacOS.html" rel="alternate" type="text/html" title="Generating Vector Tiles using the Docker Containers for macOS" /><published>2018-05-05T00:00:00-07:00</published><updated>2018-05-19T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/05/VectorTileWorkshop-MacOS</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/05/VectorTileWorkshop-MacOS.html">&lt;p&gt;In this lesson we will learn to use Docker containers to create and serve vector tiles on your Macintosh laptop.
 &lt;!--more--&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;1-install-docker-on-macos&quot;&gt;1. Install Docker on MacOS&lt;/h2&gt;
+&lt;h2 id=&quot;1-install-docker-on-macos&quot;&gt;1. Install Docker on macOS&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Download &lt;a href=&quot;https://store.docker.com/editions/community/docker-ce-desktop-mac&quot;&gt;Docker Community Edition for Mac&lt;/a&gt;&lt;/li&gt;
@@ -259,12 +261,12 @@
       &lt;li&gt;
         &lt;p&gt;&lt;em&gt;ogrinfo&lt;/em&gt;: check the shape file’s information&lt;/p&gt;
 
-        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -ti --rm -v $(pwd):/data klokantech/gdal ogrinfo PugetSound.shp -al -so&lt;/code&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -ti --rm -v $(pwd):/data klokantech/gdal ogrinfo KingCo_2000_Census_BlockGroups.shp -al -so&lt;/code&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;&lt;em&gt;ogr2ogr&lt;/em&gt;: convert shape file to GeoJSON file&lt;/p&gt;
 
-        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -ti --rm -v $(pwd):/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON PS_test.geojson PugetSound.shp -Progress&lt;/code&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -ti --rm -v $(pwd):/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON KingCo_2000_Census_BlockGroups.geojson KingCo_2000_Census_BlockGroups.shp -Progress&lt;/code&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -274,7 +276,7 @@
 &lt;ul&gt;
   &lt;li&gt;You can download the following GeoJSON file for next step if needed
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://drive.google.com/file/d/1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg/view?usp=sharing&quot;&gt;King County 2000 Census Block Groups GeoJSON&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://drive.google.com/open?id=1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg&quot;&gt;King County 2000 Census Block Groups GeoJSON&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -297,7 +299,7 @@
   &lt;li&gt;
     &lt;p&gt;Start Tippecanoe container in interactive mode at the Terminal prompt&lt;/p&gt;
 
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v $HOME:/tippecanoe jskeates/tippecanoe:latest&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -v $(pwd):/home/tippecanoe jskeates/tippecanoe:latest&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;You will see your command prompt change to look like &lt;code class=&quot;highlighter-rouge&quot;&gt;bash-4.3$&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;
@@ -310,11 +312,7 @@
 
     &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exit&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;The vector tiles will be in a new folder: $HOME/tippecanoe/states.mbtiles.
-    &lt;ul&gt;
-      &lt;li&gt;$HOME is replaced with your user directory at a unix style command promt.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;The vector tiles will now be in your directory&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;7-install-a-tileserver-gl-container&quot;&gt;7. Install a TileServer GL container&lt;/h2&gt;
@@ -323,10 +321,10 @@
   &lt;li&gt;Search for tileserver-gl&lt;/li&gt;
   &lt;li&gt;Select &lt;a href=&quot;https://hub.docker.com/r/klokantech/tileserver-gl/&quot;&gt;klokantech/tileserver-gl&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Copy the Docker pull command &amp;amp; run it at the Terminal prompt
-&lt;code class=&quot;highlighter-rouge&quot;&gt;docker pull klokantech/tileserver-gl&lt;/code&gt;&lt;/li&gt;
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;docker pull klokantech/tileserver-gl&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;8-run-tileserver-gl&quot;&gt;8. Run TileServer GL&lt;/h2&gt;
+&lt;h2 id=&quot;8-run-tileserver-gl-&quot;&gt;8. Run TileServer GL &lt;a name=&quot;starttileserver&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Ensure Docker is running on your computer&lt;/li&gt;
   &lt;li&gt;From the command line change into the directory where you have placed your mbtiles file&lt;/li&gt;
@@ -337,7 +335,7 @@
   &lt;/li&gt;
   &lt;li&gt;Test that the vector tiles are being servered by entering &lt;a href=&quot;http://localhost:8080&quot;&gt;http://localhost:8080/&lt;/a&gt; into your browser’s address bar&lt;/li&gt;
   &lt;li&gt;After testing, hit &lt;strong&gt;ctl-C&lt;/strong&gt; to quit TileServer GL&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">In this lesson we will learn to use Docker containers to create and serve vector tiles on your Macintosh laptop.</summary></entry><entry><title type="html">Generating Vector Tiles using the Docker Containers for Windows 10 (Home)</title><link href="http://localhost:4000/vector%20tiles/2018/05/01/VectorTileWorkshop-Windows10Home.html" rel="alternate" type="text/html" title="Generating Vector Tiles using the Docker Containers for Windows 10 (Home)" /><published>2018-05-01T00:00:00-07:00</published><updated>2018-05-12T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/01/VectorTileWorkshop-Windows10Home</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/01/VectorTileWorkshop-Windows10Home.html">&lt;p&gt;In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Home Edition.
+&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">In this lesson we will learn to use Docker containers to create and serve vector tiles on your Macintosh laptop.</summary></entry><entry><title type="html">Generating Vector Tiles using the Docker Containers for Windows 10 (Home)</title><link href="http://localhost:4000/vector%20tiles/2018/05/01/VectorTileWorkshop-Windows10Home.html" rel="alternate" type="text/html" title="Generating Vector Tiles using the Docker Containers for Windows 10 (Home)" /><published>2018-05-01T00:00:00-07:00</published><updated>2018-05-19T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/05/01/VectorTileWorkshop-Windows10Home</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/05/01/VectorTileWorkshop-Windows10Home.html">&lt;p&gt;In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Home Edition.
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;If you are running Windows 10 Pro or Window 10 Enterprise please use the &lt;a href=&quot;/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10.html&quot;&gt;Windows 10 Pro instructions&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -419,7 +417,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
 &lt;ul&gt;
   &lt;li&gt;You can download the following GeoJSON file for next step if needed
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://drive.google.com/file/d/1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg/view?usp=sharing&quot;&gt;King County 2000 Census Block Groups GeoJSON&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://drive.google.com/open?id=1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg&quot;&gt;King County 2000 Census Block Groups GeoJSON&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -457,7 +455,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
   &lt;/li&gt;
   &lt;li&gt;The vector tiles will be $HOME/KingCo_2000_Census_BlockGroups.mbtiles
     &lt;ul&gt;
-      &lt;li&gt;$HOME represents your user directory at a unix style command promt.&lt;/li&gt;
+      &lt;li&gt;$HOME represents your user directory at a unix style command prompt.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -474,7 +472,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;9-run-tileserver-gl&quot;&gt;9. Run TileServer GL&lt;/h2&gt;
+&lt;h2 id=&quot;9-run-tileserver-gl-&quot;&gt;9. Run TileServer GL &lt;a name=&quot;starttileserver&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Ensure Docker is running on your computer&lt;/li&gt;
   &lt;li&gt;
@@ -489,10 +487,10 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
     &lt;p&gt;Test that the vector tiles are being served by entering &lt;a href=&quot;http://192.168.99.100:8080&quot;&gt;http://192.168.99.100:8080/&lt;/a&gt; into your browser’s address bar&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;After testing, hit &lt;strong&gt;ctl-C&lt;/strong&gt; to quit TileServer GL&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Home Edition.</summary></entry><entry><title type="html">Installing and Using Maputnik, Vector Tile Style Editor.</title><link href="http://localhost:4000/vector%20tiles/2018/04/30/Maputnik.html" rel="alternate" type="text/html" title="Installing and Using Maputnik, Vector Tile Style Editor. " /><published>2018-04-30T00:00:00-07:00</published><updated>2018-05-17T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/30/Maputnik</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/30/Maputnik.html">&lt;h2 id=&quot;what-is-maputnik&quot;&gt;What is Maputnik?&lt;/h2&gt;
-&lt;p&gt;Maputnik is a vector tile visual style editor that is easy to use, free and open source. It is a style editor with immediate feedback to create Mapbox GL styles using the &lt;a href=&quot;https://www.mapbox.com/mapbox-gl-js/style-spec/&quot;&gt;Mapbox GL style specification&lt;/a&gt;. Maptunik does not require a cloud based deployment and will run on your local machine.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Peter Keum</name></author><summary type="html">In this lesson we will learn to use Docker containers to deploy various tools to create and serve vector tiles on your laptop running Windows Home Edition.</summary></entry><entry><title type="html">Installing and Using Maputnik, Vector Tile Style Editor.</title><link href="http://localhost:4000/vector%20tiles/2018/04/30/Maputnik.html" rel="alternate" type="text/html" title="Installing and Using Maputnik, Vector Tile Style Editor. " /><published>2018-04-30T00:00:00-07:00</published><updated>2018-05-19T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/30/Maputnik</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/30/Maputnik.html">&lt;h2 id=&quot;what-is-maputnik&quot;&gt;What is Maputnik?&lt;/h2&gt;
+&lt;p&gt;Maputnik is a vector tile visual style editor that is easy to use, free and open source. It is a style editor with immediate feedback to create Mapbox GL styles using the &lt;a href=&quot;https://www.mapbox.com/mapbox-gl-js/style-spec/&quot;&gt;Mapbox GL style specification&lt;/a&gt;. Maputnik does not require a cloud based deployment and will run on your local machine.&lt;/p&gt;
 
-&lt;h2 id=&quot;installing-maputnick&quot;&gt;Installing Maputnick&lt;/h2&gt;
+&lt;h2 id=&quot;installing-maputnik&quot;&gt;Installing Maputnik&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;Download the latest Maputnik release from &lt;a href=&quot;https://github.com/maputnik/editor/releases/&quot;&gt;here&lt;/a&gt;.
     &lt;ul&gt;
@@ -514,13 +512,19 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
     &lt;p&gt;Select a basemap style to choose from &lt;em&gt;Gallery Styles&lt;/em&gt;
 &lt;img src=&quot;/assets/images/maputnik-gallerystyle.png&quot; alt=&quot;screen shot&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Start Tileserver-gl to serve the previously generated vector tiles.&lt;/li&gt;
+  &lt;li&gt;Start Tileserver-gl to serve the previously generated vector tiles.
+    &lt;ul&gt;
+      &lt;li&gt;See previous Windows Pro Instructions &lt;a href=&quot;/vector%20tiles/2018/05/06/VectorTileWorkshop-Windows10.html#starttileserver&quot;&gt;step 9&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;See previous MacOS Instructions &lt;a href=&quot;/vector%20tiles/2018/05/05/VectorTileWorkshop-MacOS.html#starttileserver&quot;&gt;step 8&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;See previous Windows Home Instructions &lt;a href=&quot;/vector%20tiles/2018/05/01/VectorTileWorkshop-Windows10Home.html#starttileserver&quot;&gt;step 9&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;Load the King County Block Group vector tiles.&lt;/li&gt;
   &lt;li&gt;Load the data by clicking on &lt;em&gt;Sources&lt;/em&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;strong&gt;Hint:&lt;/strong&gt; To delete any source, one must remove it from layer list first.
 &lt;img src=&quot;/assets/images/Maputnik-AddSource.png&quot; alt=&quot;screen shot&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Source ID&lt;/em&gt;: Give a name asosociate with the data&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Source ID&lt;/em&gt;: Give a name associate with the data&lt;/li&gt;
       &lt;li&gt;&lt;em&gt;Source Type&lt;/em&gt;: Select GeoJSON or Vector (TileJSON URL)&lt;/li&gt;
       &lt;li&gt;&lt;em&gt;TIleJSON URL&lt;/em&gt;: Copy url of locally hosted vector tile
 &lt;img src=&quot;/assets/images/Maputnik-AddLayer.png&quot; alt=&quot;screen shot&quot; /&gt;&lt;/li&gt;
@@ -528,7 +532,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
   &lt;/li&gt;
   &lt;li&gt;Export Style JSON file locally.  This includes references to the basemap, and your own styled vector tiles.
 &lt;img src=&quot;/assets/images/maptunik-export.png&quot; alt=&quot;screen shot&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Peter Keum</name></author><summary type="html">What is Maputnik? Maputnik is a vector tile visual style editor that is easy to use, free and open source. It is a style editor with immediate feedback to create Mapbox GL styles using the Mapbox GL style specification. Maptunik does not require a cloud based deployment and will run on your local machine.</summary></entry><entry><title type="html">Creating Simple Web Map from vector tiles</title><link href="http://localhost:4000/vector%20tiles/2018/04/29/WebMap.html" rel="alternate" type="text/html" title="Creating Simple Web Map from vector tiles " /><published>2018-04-29T00:00:00-07:00</published><updated>2018-05-17T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/29/WebMap</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/29/WebMap.html">&lt;ol&gt;
+&lt;/ol&gt;</content><author><name>Peter Keum</name></author><summary type="html">What is Maputnik? Maputnik is a vector tile visual style editor that is easy to use, free and open source. It is a style editor with immediate feedback to create Mapbox GL styles using the Mapbox GL style specification. Maputnik does not require a cloud based deployment and will run on your local machine.</summary></entry><entry><title type="html">Creating Simple Web Map from Vector Tiles</title><link href="http://localhost:4000/vector%20tiles/2018/04/29/WebMap.html" rel="alternate" type="text/html" title="Creating Simple Web Map from Vector Tiles " /><published>2018-04-29T00:00:00-07:00</published><updated>2018-05-19T00:00:00-07:00</updated><id>http://localhost:4000/vector%20tiles/2018/04/29/WebMap</id><content type="html" xml:base="http://localhost:4000/vector%20tiles/2018/04/29/WebMap.html">&lt;ol&gt;
   &lt;li&gt;Download &lt;em&gt;index.html&lt;/em&gt; from &lt;a href=&quot;https://github.com/pkgeo-org/waurisa2018_workshop_data&quot;&gt;PKgeo’s GitHub page&lt;/a&gt; and save into new clean directory.&lt;/li&gt;
   &lt;li&gt;Copy the previously exported &lt;em&gt;style.json&lt;/em&gt; file into the same directory location created in step 1 above.&lt;/li&gt;
   &lt;li&gt;Open &lt;em&gt;style.json&lt;/em&gt; in a text editor.
@@ -537,8 +541,8 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
         &lt;p&gt;Edit line 13 and 14. Change the coordinates to 47.613 and -122.3988.&lt;/p&gt;
 
         &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;center&quot;: [
-47.613,
--122.3988
+  47.613,
+  -122.3988
 ],
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
@@ -568,4 +572,4 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
       &lt;li&gt;Once saved, click &lt;em&gt;view bl.ock&lt;/em&gt; and a browser new tab will open with a map view showing your Maputnik style.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Peter Keum</name></author><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html">Download index.html from PKgeo’s GitHub page and save into new clean directory. Copy the previously exported style.json file into the same directory location created in step 1 above. Open style.json in a text editor. Edit line 13 and 14. Change the coordinates to 47.613 and -122.3988.</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>Peter Keum</name></author><summary type="html">Download index.html from PKgeo’s GitHub page and save into new clean directory. Copy the previously exported style.json file into the same directory location created in step 1 above. Open style.json in a text editor. Edit line 13 and 14. Change the coordinates to 47.613 and -122.3988.</summary></entry></feed>

@@ -11,7 +11,7 @@
 
   <title>
     
-      Generating Vector Tiles using the Docker Containers for Mac OS &middot; PKgeo
+      Generating Vector Tiles using the Docker Containers for macOS &middot; PKgeo
     
   </title>
 
@@ -105,10 +105,6 @@
   
 
   
-    
-  
-
-  
 
   
     
@@ -134,13 +130,6 @@
     
   
 
-  
-
-  
-    
-      <a class="category-link "
-          href="/category/markup.html">Resources</a>
-    
   
 
   
@@ -246,7 +235,7 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Generating Vector Tiles using the Docker Containers for Mac OS</h1>
+  <h1 class="post-title">Generating Vector Tiles using the Docker Containers for macOS</h1>
 </header>
 <div class="content">
   <div class="post-meta">
@@ -272,7 +261,7 @@
     <p>In this lesson we will learn to use Docker containers to create and serve vector tiles on your Macintosh laptop.
 <!--more--></p>
 
-<h2 id="1-install-docker-on-macos">1. Install Docker on MacOS</h2>
+<h2 id="1-install-docker-on-macos">1. Install Docker on macOS</h2>
 
 <ul>
   <li>Download <a href="https://store.docker.com/editions/community/docker-ce-desktop-mac">Docker Community Edition for Mac</a></li>
@@ -306,12 +295,12 @@
       <li>
         <p><em>ogrinfo</em>: check the shape file’s information</p>
 
-        <p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogrinfo PugetSound.shp -al -so</code></p>
+        <p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogrinfo KingCo_2000_Census_BlockGroups.shp -al -so</code></p>
       </li>
       <li>
         <p><em>ogr2ogr</em>: convert shape file to GeoJSON file</p>
 
-        <p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON PS_test.geojson PugetSound.shp -Progress</code></p>
+        <p><code class="highlighter-rouge">docker run -ti --rm -v $(pwd):/data klokantech/gdal ogr2ogr -t_srs EPSG:4326 -f GeoJSON KingCo_2000_Census_BlockGroups.geojson KingCo_2000_Census_BlockGroups.shp -Progress</code></p>
       </li>
     </ul>
   </li>
@@ -321,7 +310,7 @@
 <ul>
   <li>You can download the following GeoJSON file for next step if needed
     <ul>
-      <li><a href="https://drive.google.com/file/d/1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg/view?usp=sharing">King County 2000 Census Block Groups GeoJSON</a></li>
+      <li><a href="https://drive.google.com/open?id=1ofMZSOH34HIMNKqjo0w4H9qzzAukCKQg">King County 2000 Census Block Groups GeoJSON</a></li>
     </ul>
   </li>
 </ul>
@@ -344,7 +333,7 @@
   <li>
     <p>Start Tippecanoe container in interactive mode at the Terminal prompt</p>
 
-    <p><code class="highlighter-rouge">docker run -it -v $HOME:/tippecanoe jskeates/tippecanoe:latest</code></p>
+    <p><code class="highlighter-rouge">docker run -it -v $(pwd):/home/tippecanoe jskeates/tippecanoe:latest</code></p>
   </li>
   <li>You will see your command prompt change to look like <code class="highlighter-rouge">bash-4.3$</code></li>
   <li>
@@ -357,11 +346,7 @@
 
     <p><code class="highlighter-rouge">exit</code></p>
   </li>
-  <li>The vector tiles will be in a new folder: $HOME/tippecanoe/states.mbtiles.
-    <ul>
-      <li>$HOME is replaced with your user directory at a unix style command promt.</li>
-    </ul>
-  </li>
+  <li>The vector tiles will now be in your directory</li>
 </ul>
 
 <h2 id="7-install-a-tileserver-gl-container">7. Install a TileServer GL container</h2>
@@ -370,10 +355,10 @@
   <li>Search for tileserver-gl</li>
   <li>Select <a href="https://hub.docker.com/r/klokantech/tileserver-gl/">klokantech/tileserver-gl</a></li>
   <li>Copy the Docker pull command &amp; run it at the Terminal prompt
-<code class="highlighter-rouge">docker pull klokantech/tileserver-gl</code></li>
+  <code class="highlighter-rouge">docker pull klokantech/tileserver-gl</code></li>
 </ul>
 
-<h2 id="8-run-tileserver-gl">8. Run TileServer GL</h2>
+<h2 id="8-run-tileserver-gl-">8. Run TileServer GL <a name="starttileserver"></a></h2>
 <ul>
   <li>Ensure Docker is running on your computer</li>
   <li>From the command line change into the directory where you have placed your mbtiles file</li>
